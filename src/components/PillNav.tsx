@@ -1,4 +1,4 @@
-import { useLayoutEffect, useMemo, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { Link, useRouter } from "@tanstack/react-router";
 import { Menu, X } from "lucide-react";
 import { gsap } from "gsap";
@@ -9,6 +9,9 @@ const navItems = [
   { label: "Home", href: "/" },
   { label: "About", href: "/about" },
   { label: "Explore", href: "/explore" },
+  { label: "Volunteers", href: "/volunteers" },
+  { label: "NGOs", href: "/ngos" },
+  { label: "Campaigns", href: "/campaigns" },
   { label: "Get Started", href: "/get-started" },
 ];
 
@@ -22,13 +25,14 @@ export function PillNav() {
     () => router.state.location.pathname,
     [router.state.location.pathname],
   );
-  const activeHref = navItems.find((item) => item.href === currentPath)?.href ?? "/";
+  const activeHref =
+    navItems.find((item) => item.href === currentPath)?.href ?? "/";
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     registerGsap();
   }, []);
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     const menu = mobileMenuRef.current;
     const burger = burgerRef.current;
     if (!menu || !burger) return;

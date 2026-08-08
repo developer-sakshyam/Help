@@ -15,21 +15,73 @@ export const NAV_LINKS = [
 ] as const;
 
 export const STATS = [
-  { value: 48250, suffix: "+", label: "People reached", note: "Across 61 districts" },
-  { value: 1840, suffix: "", label: "Verified organizations", note: "NGOs, hospitals, groups" },
-  { value: 12960, suffix: "", label: "Active volunteers", note: "Skilled and on-ground" },
-  { value: 7420, suffix: "", label: "Requests fulfilled", note: "Last 12 months" },
+  {
+    value: 48250,
+    suffix: "+",
+    label: "People reached",
+    note: "Across 61 districts",
+  },
+  {
+    value: 1840,
+    suffix: "",
+    label: "Verified organizations",
+    note: "NGOs, hospitals, groups",
+  },
+  {
+    value: 12960,
+    suffix: "",
+    label: "Active volunteers",
+    note: "Skilled and on-ground",
+  },
+  {
+    value: 7420,
+    suffix: "",
+    label: "Requests fulfilled",
+    note: "Last 12 months",
+  },
 ] as const;
 
 export const CATEGORIES = [
-  { name: "Blood", detail: "Emergency and scheduled donations", count: "312 open requests" },
-  { name: "Food", detail: "Meals, rations, relief packages", count: "128 open requests" },
-  { name: "Medical", detail: "Treatment support and supplies", count: "96 open requests" },
-  { name: "Clothing", detail: "Winter wear and everyday clothes", count: "204 listings" },
-  { name: "Books", detail: "School and library donations", count: "87 listings" },
-  { name: "Furniture", detail: "Household and institutional", count: "43 listings" },
-  { name: "Electronics", detail: "Devices for schools and clinics", count: "38 listings" },
-  { name: "Shelter", detail: "Temporary housing and rebuilding", count: "21 projects" },
+  {
+    name: "Blood",
+    detail: "Emergency and scheduled donations",
+    count: "312 open requests",
+  },
+  {
+    name: "Food",
+    detail: "Meals, rations, relief packages",
+    count: "128 open requests",
+  },
+  {
+    name: "Medical",
+    detail: "Treatment support and supplies",
+    count: "96 open requests",
+  },
+  {
+    name: "Clothing",
+    detail: "Winter wear and everyday clothes",
+    count: "204 listings",
+  },
+  {
+    name: "Books",
+    detail: "School and library donations",
+    count: "87 listings",
+  },
+  {
+    name: "Furniture",
+    detail: "Household and institutional",
+    count: "43 listings",
+  },
+  {
+    name: "Electronics",
+    detail: "Devices for schools and clinics",
+    count: "38 listings",
+  },
+  {
+    name: "Shelter",
+    detail: "Temporary housing and rebuilding",
+    count: "21 projects",
+  },
 ] as const;
 
 export const OPPORTUNITIES = [
@@ -68,12 +120,42 @@ export const OPPORTUNITIES = [
 ] as const;
 
 export const NGOS = [
-  { name: "Himalayan Aid Collective", focus: "Disaster relief", district: "Kathmandu", years: 14 },
-  { name: "Sarathi Education Trust", focus: "Education access", district: "Pokhara", years: 9 },
-  { name: "Koshi Relief Network", focus: "Flood response", district: "Biratnagar", years: 7 },
-  { name: "Nari Shakti Nepal", focus: "Women's health", district: "Butwal", years: 11 },
-  { name: "Annapurna Food Bank", focus: "Food security", district: "Kaski", years: 6 },
-  { name: "Bagmati Blood Alliance", focus: "Blood donation", district: "Lalitpur", years: 12 },
+  {
+    name: "Himalayan Aid Collective",
+    focus: "Disaster relief",
+    district: "Kathmandu",
+    years: 14,
+  },
+  {
+    name: "Sarathi Education Trust",
+    focus: "Education access",
+    district: "Pokhara",
+    years: 9,
+  },
+  {
+    name: "Koshi Relief Network",
+    focus: "Flood response",
+    district: "Biratnagar",
+    years: 7,
+  },
+  {
+    name: "Nari Shakti Nepal",
+    focus: "Women's health",
+    district: "Butwal",
+    years: 11,
+  },
+  {
+    name: "Annapurna Food Bank",
+    focus: "Food security",
+    district: "Kaski",
+    years: 6,
+  },
+  {
+    name: "Bagmati Blood Alliance",
+    focus: "Blood donation",
+    district: "Lalitpur",
+    years: 12,
+  },
 ] as const;
 
 export const CAMPAIGNS = [

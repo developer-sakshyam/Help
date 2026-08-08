@@ -5,14 +5,31 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { CAMPAIGNS, CATEGORIES, FAQS, NGOS, OPPORTUNITIES, STATS, STORIES, TESTIMONIALS } from "@/data/landing";
+import {
+  CAMPAIGNS,
+  CATEGORIES,
+  FAQS,
+  NGOS,
+  OPPORTUNITIES,
+  STATS,
+  STORIES,
+  TESTIMONIALS,
+} from "@/data/landing";
 import { useCounter, useReveal } from "@/hooks/use-reveal";
 import AccordionGallery from "@/components/AccordionGallery";
 import { AnimatedButton } from "@/components/AnimatedButton";
 import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/hero-nepal.jpg";
 
-function SectionHeader({ eyebrow, title, lead }: { eyebrow: string; title: string; lead?: string }) {
+function SectionHeader({
+  eyebrow,
+  title,
+  lead,
+}: {
+  eyebrow: string;
+  title: string;
+  lead?: string;
+}) {
   return (
     <div className="max-w-2xl">
       <p className="eyebrow reveal-init">{eyebrow}</p>
@@ -45,13 +62,17 @@ export function MissionSection() {
         />
         <div>
           <p className="reveal-init text-lg leading-relaxed">
-            Nepal is not short of generosity. It is short of coordination — of knowing who needs
-            what, where, and who is already on the way. Help.com turns scattered phone calls,
-            spreadsheets, and group chats into one accountable system.
+            Nepal is not short of generosity. It is short of coordination — of
+            knowing who needs what, where, and who is already on the way.
+            Help.com turns scattered phone calls, spreadsheets, and group chats
+            into one accountable system.
           </p>
           <ul className="mt-8 space-y-4">
             {points.map((point) => (
-              <li key={point} className="reveal-init flex gap-3 text-[0.95rem] text-muted-foreground">
+              <li
+                key={point}
+                className="reveal-init flex gap-3 text-[0.95rem] text-muted-foreground"
+              >
                 <Check className="mt-0.5 size-4 shrink-0 text-brand" />
                 <span>{point}</span>
               </li>
@@ -114,32 +135,33 @@ export function CategoriesSection() {
         <AccordionGallery
           items={[
             {
-              title: 'Blood',
-              indexLabel: '01',
-              description: 'Connect donors with people who urgently need blood.',
+              title: "Blood",
+              indexLabel: "01",
+              description:
+                "Connect donors with people who urgently need blood.",
               src: heroImage,
-              alt: 'Blood donation',
+              alt: "Blood donation",
             },
             {
-              title: 'Food',
-              indexLabel: '02',
-              description: 'Put surplus food where it can make a difference.',
+              title: "Food",
+              indexLabel: "02",
+              description: "Put surplus food where it can make a difference.",
               src: heroImage,
-              alt: 'Food distribution',
+              alt: "Food distribution",
             },
             {
-              title: 'Clothing',
-              indexLabel: '03',
-              description: 'Give useful clothing a second life.',
+              title: "Clothing",
+              indexLabel: "03",
+              description: "Give useful clothing a second life.",
               src: heroImage,
-              alt: 'Clothing donation',
+              alt: "Clothing donation",
             },
             {
-              title: 'Volunteers',
-              indexLabel: '04',
+              title: "Volunteers",
+              indexLabel: "04",
               description: "Find people ready to give their time and skills.",
               src: heroImage,
-              alt: 'Community volunteers',
+              alt: "Community volunteers",
             },
           ]}
           trigger="hover"
@@ -185,9 +207,13 @@ export function OpportunitiesSection() {
                 >
                   {item.urgency}
                 </span>
-                <span className="text-xs text-muted-foreground">{item.location}</span>
+                <span className="text-xs text-muted-foreground">
+                  {item.location}
+                </span>
               </div>
-              <h3 className="mt-4 text-lg font-semibold tracking-tight">{item.title}</h3>
+              <h3 className="mt-4 text-lg font-semibold tracking-tight">
+                {item.title}
+              </h3>
               <p className="mt-1 text-sm text-muted-foreground">{item.org}</p>
               <dl className="mt-6 flex flex-wrap gap-x-8 gap-y-2 border-t border-border pt-4 text-xs">
                 <div>
@@ -246,7 +272,10 @@ export function CampaignsSection() {
   return (
     <section ref={ref} className="border-y border-border bg-surface">
       <div className="shell py-24 md:py-32">
-        <SectionHeader eyebrow="Featured campaigns" title="Funding with a visible finish line." />
+        <SectionHeader
+          eyebrow="Featured campaigns"
+          title="Funding with a visible finish line."
+        />
         <div className="mt-12 grid gap-6 lg:grid-cols-3">
           {CAMPAIGNS.map((campaign) => {
             const pct = Math.round((campaign.raised / campaign.goal) * 100);
@@ -258,15 +287,22 @@ export function CampaignsSection() {
                 <h3 className="text-lg font-semibold leading-snug tracking-tight">
                   {campaign.title}
                 </h3>
-                <p className="mt-1 text-sm text-muted-foreground">{campaign.org}</p>
+                <p className="mt-1 text-sm text-muted-foreground">
+                  {campaign.org}
+                </p>
 
                 <div className="mt-8">
                   <div className="flex items-baseline justify-between text-sm">
                     <span className="font-medium">{npr(campaign.raised)}</span>
-                    <span className="text-muted-foreground">of {npr(campaign.goal)}</span>
+                    <span className="text-muted-foreground">
+                      of {npr(campaign.goal)}
+                    </span>
                   </div>
                   <div className="mt-3 h-1 w-full overflow-hidden rounded-full bg-muted">
-                    <div className="h-full rounded-full bg-brand" style={{ width: `${pct}%` }} />
+                    <div
+                      className="h-full rounded-full bg-brand"
+                      style={{ width: `${pct}%` }}
+                    />
                   </div>
                   <p className="mt-3 flex justify-between font-mono text-[0.7rem] uppercase tracking-widest text-muted-foreground">
                     <span>{campaign.supporters} supporters</span>
@@ -294,8 +330,12 @@ export function ImpactSection() {
         {STORIES.map((story) => (
           <article key={story.headline} className="reveal-init bg-card p-7">
             <p className="eyebrow">{story.place}</p>
-            <h3 className="mt-4 font-display text-2xl leading-tight">{story.headline}</h3>
-            <p className="mt-4 text-sm leading-relaxed text-muted-foreground">{story.body}</p>
+            <h3 className="mt-4 font-display text-2xl leading-tight">
+              {story.headline}
+            </h3>
+            <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+              {story.body}
+            </p>
           </article>
         ))}
       </div>
@@ -306,9 +346,14 @@ export function ImpactSection() {
 export function TestimonialsSection() {
   const ref = useReveal<HTMLElement>();
   return (
-    <section ref={ref} className="border-y border-border bg-ink text-ink-foreground">
+    <section
+      ref={ref}
+      className="border-y border-border bg-ink text-ink-foreground"
+    >
       <div className="shell py-24 md:py-32">
-        <p className="eyebrow reveal-init text-ink-foreground/50">Testimonials</p>
+        <p className="eyebrow reveal-init text-ink-foreground/50">
+          Testimonials
+        </p>
         <div className="mt-12 grid gap-12 md:grid-cols-3">
           {TESTIMONIALS.map((testimonial) => (
             <figure key={testimonial.name} className="reveal-init">
@@ -317,7 +362,9 @@ export function TestimonialsSection() {
               </blockquote>
               <figcaption className="mt-6 border-t border-ink-foreground/15 pt-4 text-sm">
                 <span className="font-medium">{testimonial.name}</span>
-                <span className="mt-0.5 block text-ink-foreground/60">{testimonial.role}</span>
+                <span className="mt-0.5 block text-ink-foreground/60">
+                  {testimonial.role}
+                </span>
               </figcaption>
             </figure>
           ))}
@@ -360,12 +407,18 @@ export function ClosingSection() {
         </h2>
         <div className="reveal-init mt-10 flex flex-wrap justify-center gap-3">
           <AnimatedButton asChild>
-            <a href="/signup" className="rounded-md text-sm font-medium text-brand-foreground">
+            <a
+              href="/signup"
+              className="rounded-md text-sm font-medium text-brand-foreground"
+            >
               Create an account
             </a>
           </AnimatedButton>
           <AnimatedButton asChild>
-            <a href="/explore" className="rounded-md border border-border-strong text-sm font-medium transition-colors hover:bg-background">
+            <a
+              href="/explore"
+              className="rounded-md border border-border-strong text-sm font-medium transition-colors hover:bg-background"
+            >
               Explore Opportunities
             </a>
           </AnimatedButton>

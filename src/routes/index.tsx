@@ -1,14 +1,11 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { HeroScrollExpand } from "@/components/landing/hero-scroll-expand";
 import {
-  CampaignsSection,
   CategoriesSection,
   ClosingSection,
   FaqSection,
-  ImpactSection,
   MissionSection,
   NgoSection,
-  OpportunitiesSection,
   StatsSection,
   TestimonialsSection,
 } from "@/components/landing/sections";
@@ -38,10 +35,7 @@ function LandingPage() {
         <MissionSection />
         <StatsSection />
         <CategoriesSection />
-        <OpportunitiesSection />
         <NgoSection />
-        <CampaignsSection />
-        <ImpactSection />
         <TestimonialsSection />
         <FaqSection />
         <ClosingSection />

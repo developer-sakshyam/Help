@@ -1,0 +1,1 @@
+var e=`/assets/hero-nepal-8VAR8a3q.jpg`;export{e as t};

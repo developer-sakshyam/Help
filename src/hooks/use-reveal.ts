@@ -1,5 +1,10 @@
-import { useLayoutEffect, useRef } from "react";
-import { gsap, prefersReducedMotion, registerGsap, ScrollTrigger } from "@/lib/gsap";
+import { useEffect, useRef } from "react";
+import {
+  gsap,
+  prefersReducedMotion,
+  registerGsap,
+  ScrollTrigger,
+} from "@/lib/gsap";
 
 type RevealOptions = {
   /** CSS selector for the elements to stagger in. */
@@ -14,11 +19,18 @@ type RevealOptions = {
  * Attach the returned ref to the section root and add `reveal-init`
  * to every child that should animate in.
  */
-export function useReveal<T extends HTMLElement = HTMLDivElement>(options: RevealOptions = {}) {
-  const { selector = ".reveal-init", y = 18, stagger = 0.08, start = "top 82%" } = options;
+export function useReveal<T extends HTMLElement = HTMLDivElement>(
+  options: RevealOptions = {},
+) {
+  const {
+    selector = ".reveal-init",
+    y = 18,
+    stagger = 0.08,
+    start = "top 82%",
+  } = options;
   const ref = useRef<T>(null);
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     const root = ref.current;
     if (!root) return;
     registerGsap();
@@ -56,7 +68,7 @@ export function useReveal<T extends HTMLElement = HTMLDivElement>(options: Revea
 export function useCounter(value: number) {
   const ref = useRef<HTMLSpanElement>(null);
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     const el = ref.current;
     if (!el) return;
     registerGsap();

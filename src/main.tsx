@@ -7,7 +7,7 @@ import { getRouter } from "./router";
 const router = getRouter();
 
 createRoot(document.getElementById("root")!).render(
-  <Hydrate when="visible">
+  <Hydrate when={"visible" as any}>
     <RouterProvider router={router} />
   </Hydrate>,
 );

@@ -52,12 +52,15 @@ export default function AccordionGallery({
     const panels = panelsRef.current;
     if (!panels || panels.length === 0) return;
 
-    const ctx = gsap.context(() => {
-      panels.forEach((p, i) => {
-        if (!p) return;
-        gsap.set(p, { flex: i === active ? 4 : 1, clearProps: "all" });
-      });
-    }, containerRef.current as Element | undefined);
+    const ctx = gsap.context(
+      () => {
+        panels.forEach((p, i) => {
+          if (!p) return;
+          gsap.set(p, { flex: i === active ? 4 : 1, clearProps: "all" });
+        });
+      },
+      containerRef.current as Element | undefined,
+    );
 
     return () => ctx.revert();
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -76,7 +79,11 @@ export default function AccordionGallery({
         p,
         {
           flex: isActive ? 4 : 1,
-          filter: grayscale ? (isActive ? "none" : "grayscale(1) brightness(0.85)") : "none",
+          filter: grayscale
+            ? isActive
+              ? "none"
+              : "grayscale(1) brightness(0.85)"
+            : "none",
         },
         0,
       );
@@ -86,7 +93,9 @@ export default function AccordionGallery({
       }
     });
 
-    return () => tl.kill();
+    return () => {
+      tl.kill();
+    };
   }, [active, duration, ease, grayscale, prefersReducedMotion]);
 
   function handlePointerMove(e: React.PointerEvent, i: number) {
@@ -101,7 +110,14 @@ export default function AccordionGallery({
     const rotX = -(ry - 0.5) * tilt;
     const inner = p.querySelector<HTMLElement>(".ag-inner");
     if (!inner) return;
-    gsap.to(inner, { x: px, y: py, rotateX: rotX, rotateY: rotY, duration: 0.4, ease: "power3.out" });
+    gsap.to(inner, {
+      x: px,
+      y: py,
+      rotateX: rotX,
+      rotateY: rotY,
+      duration: 0.4,
+      ease: "power3.out",
+    });
   }
 
   function handlePointerLeave(i: number) {
@@ -109,23 +125,37 @@ export default function AccordionGallery({
     if (!p || prefersReducedMotion) return;
     const inner = p.querySelector<HTMLElement>(".ag-inner");
     if (!inner) return;
-    gsap.to(inner, { x: 0, y: 0, rotateX: 0, rotateY: 0, duration: 0.6, ease: "power3.out" });
+    gsap.to(inner, {
+      x: 0,
+      y: 0,
+      rotateX: 0,
+      rotateY: 0,
+      duration: 0.6,
+      ease: "power3.out",
+    });
   }
 
   return (
-    <div ref={containerRef} className={`ag-container ag-${orientation}`} role="list">
+    <div
+      ref={containerRef}
+      className={`ag-container ag-${orientation}`}
+      role="list"
+    >
       {items.map((it, i) => (
         <div
           key={i}
           role="listitem"
-          ref={(el) => (panelsRef.current[i] = el)}
+          ref={(el) => {
+            panelsRef.current[i] = el;
+          }}
           className={`ag-panel ${i === active ? "ag-active" : ""}`}
           onMouseEnter={() => trigger === "hover" && setActive(i)}
           onClick={() => setActive(i)}
           onKeyDown={(e) => {
             const ev = e as React.KeyboardEvent;
             if (ev.key === "Enter" || ev.key === " ") setActive(i);
-            if (ev.key === "ArrowRight") setActive((s) => Math.min(items.length - 1, s + 1));
+            if (ev.key === "ArrowRight")
+              setActive((s) => Math.min(items.length - 1, s + 1));
             if (ev.key === "ArrowLeft") setActive((s) => Math.max(0, s - 1));
           }}
           tabIndex={0}
@@ -141,7 +171,9 @@ export default function AccordionGallery({
               <div className="ag-label">
                 <div className="ag-pill">{it.indexLabel}</div>
                 <div className="ag-title">{it.title}</div>
-                {it.description && <div className="ag-desc">{it.description}</div>}
+                {it.description && (
+                  <div className="ag-desc">{it.description}</div>
+                )}
               </div>
             )}
           </div>

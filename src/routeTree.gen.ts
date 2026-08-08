@@ -11,7 +11,17 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as AboutRouteImport } from './routes/about'
+import { Route as CampaignsRouteImport } from './routes/campaigns'
 import { Route as ExploreRouteImport } from './routes/explore'
+import { Route as GetStartedRouteImport } from './routes/get-started'
+import { Route as LoginRouteImport } from './routes/login'
+import { Route as NgosRouteImport } from './routes/ngos'
+import { Route as SignupRouteImport } from './routes/signup'
+import { Route as VolunteersRouteImport } from './routes/volunteers'
+import { Route as SignupProfileRouteImport } from './routes/signup/profile'
+import { Route as SignupReviewRouteImport } from './routes/signup/review'
+import { Route as SignupRoleRouteImport } from './routes/signup/role'
+import { Route as SignupSuccessRouteImport } from './routes/signup/success'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
@@ -23,40 +33,166 @@ const AboutRoute = AboutRouteImport.update({
   path: '/about',
   getParentRoute: () => rootRouteImport,
 } as any)
+const CampaignsRoute = CampaignsRouteImport.update({
+  id: '/campaigns',
+  path: '/campaigns',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ExploreRoute = ExploreRouteImport.update({
   id: '/explore',
   path: '/explore',
   getParentRoute: () => rootRouteImport,
 } as any)
+const GetStartedRoute = GetStartedRouteImport.update({
+  id: '/get-started',
+  path: '/get-started',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const LoginRoute = LoginRouteImport.update({
+  id: '/login',
+  path: '/login',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const NgosRoute = NgosRouteImport.update({
+  id: '/ngos',
+  path: '/ngos',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SignupRoute = SignupRouteImport.update({
+  id: '/signup',
+  path: '/signup',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const VolunteersRoute = VolunteersRouteImport.update({
+  id: '/volunteers',
+  path: '/volunteers',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SignupProfileRoute = SignupProfileRouteImport.update({
+  id: '/profile',
+  path: '/profile',
+  getParentRoute: () => SignupRoute,
+} as any)
+const SignupReviewRoute = SignupReviewRouteImport.update({
+  id: '/review',
+  path: '/review',
+  getParentRoute: () => SignupRoute,
+} as any)
+const SignupRoleRoute = SignupRoleRouteImport.update({
+  id: '/role',
+  path: '/role',
+  getParentRoute: () => SignupRoute,
+} as any)
+const SignupSuccessRoute = SignupSuccessRouteImport.update({
+  id: '/success',
+  path: '/success',
+  getParentRoute: () => SignupRoute,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
+  '/campaigns': typeof CampaignsRoute
   '/explore': typeof ExploreRoute
+  '/get-started': typeof GetStartedRoute
+  '/login': typeof LoginRoute
+  '/ngos': typeof NgosRoute
+  '/signup': typeof SignupRouteWithChildren
+  '/volunteers': typeof VolunteersRoute
+  '/signup/profile': typeof SignupProfileRoute
+  '/signup/review': typeof SignupReviewRoute
+  '/signup/role': typeof SignupRoleRoute
+  '/signup/success': typeof SignupSuccessRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
+  '/campaigns': typeof CampaignsRoute
   '/explore': typeof ExploreRoute
+  '/get-started': typeof GetStartedRoute
+  '/login': typeof LoginRoute
+  '/ngos': typeof NgosRoute
+  '/signup': typeof SignupRouteWithChildren
+  '/volunteers': typeof VolunteersRoute
+  '/signup/profile': typeof SignupProfileRoute
+  '/signup/review': typeof SignupReviewRoute
+  '/signup/role': typeof SignupRoleRoute
+  '/signup/success': typeof SignupSuccessRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
+  '/campaigns': typeof CampaignsRoute
   '/explore': typeof ExploreRoute
+  '/get-started': typeof GetStartedRoute
+  '/login': typeof LoginRoute
+  '/ngos': typeof NgosRoute
+  '/signup': typeof SignupRouteWithChildren
+  '/volunteers': typeof VolunteersRoute
+  '/signup/profile': typeof SignupProfileRoute
+  '/signup/review': typeof SignupReviewRoute
+  '/signup/role': typeof SignupRoleRoute
+  '/signup/success': typeof SignupSuccessRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/about' | '/explore'
+  fullPaths:
+    | '/'
+    | '/about'
+    | '/campaigns'
+    | '/explore'
+    | '/get-started'
+    | '/login'
+    | '/ngos'
+    | '/signup'
+    | '/volunteers'
+    | '/signup/profile'
+    | '/signup/review'
+    | '/signup/role'
+    | '/signup/success'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/about' | '/explore'
-  id: '__root__' | '/' | '/about' | '/explore'
+  to:
+    | '/'
+    | '/about'
+    | '/campaigns'
+    | '/explore'
+    | '/get-started'
+    | '/login'
+    | '/ngos'
+    | '/signup'
+    | '/volunteers'
+    | '/signup/profile'
+    | '/signup/review'
+    | '/signup/role'
+    | '/signup/success'
+  id:
+    | '__root__'
+    | '/'
+    | '/about'
+    | '/campaigns'
+    | '/explore'
+    | '/get-started'
+    | '/login'
+    | '/ngos'
+    | '/signup'
+    | '/volunteers'
+    | '/signup/profile'
+    | '/signup/review'
+    | '/signup/role'
+    | '/signup/success'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AboutRoute: typeof AboutRoute
+  CampaignsRoute: typeof CampaignsRoute
   ExploreRoute: typeof ExploreRoute
+  GetStartedRoute: typeof GetStartedRoute
+  LoginRoute: typeof LoginRoute
+  NgosRoute: typeof NgosRoute
+  SignupRoute: typeof SignupRouteWithChildren
+  VolunteersRoute: typeof VolunteersRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -75,6 +211,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AboutRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/campaigns': {
+      id: '/campaigns'
+      path: '/campaigns'
+      fullPath: '/campaigns'
+      preLoaderRoute: typeof CampaignsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/explore': {
       id: '/explore'
       path: '/explore'
@@ -82,13 +225,99 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ExploreRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/get-started': {
+      id: '/get-started'
+      path: '/get-started'
+      fullPath: '/get-started'
+      preLoaderRoute: typeof GetStartedRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/login': {
+      id: '/login'
+      path: '/login'
+      fullPath: '/login'
+      preLoaderRoute: typeof LoginRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/ngos': {
+      id: '/ngos'
+      path: '/ngos'
+      fullPath: '/ngos'
+      preLoaderRoute: typeof NgosRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/signup': {
+      id: '/signup'
+      path: '/signup'
+      fullPath: '/signup'
+      preLoaderRoute: typeof SignupRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/volunteers': {
+      id: '/volunteers'
+      path: '/volunteers'
+      fullPath: '/volunteers'
+      preLoaderRoute: typeof VolunteersRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/signup/profile': {
+      id: '/signup/profile'
+      path: '/profile'
+      fullPath: '/signup/profile'
+      preLoaderRoute: typeof SignupProfileRouteImport
+      parentRoute: typeof SignupRoute
+    }
+    '/signup/review': {
+      id: '/signup/review'
+      path: '/review'
+      fullPath: '/signup/review'
+      preLoaderRoute: typeof SignupReviewRouteImport
+      parentRoute: typeof SignupRoute
+    }
+    '/signup/role': {
+      id: '/signup/role'
+      path: '/role'
+      fullPath: '/signup/role'
+      preLoaderRoute: typeof SignupRoleRouteImport
+      parentRoute: typeof SignupRoute
+    }
+    '/signup/success': {
+      id: '/signup/success'
+      path: '/success'
+      fullPath: '/signup/success'
+      preLoaderRoute: typeof SignupSuccessRouteImport
+      parentRoute: typeof SignupRoute
+    }
   }
 }
+
+interface SignupRouteChildren {
+  SignupProfileRoute: typeof SignupProfileRoute
+  SignupReviewRoute: typeof SignupReviewRoute
+  SignupRoleRoute: typeof SignupRoleRoute
+  SignupSuccessRoute: typeof SignupSuccessRoute
+}
+
+const SignupRouteChildren: SignupRouteChildren = {
+  SignupProfileRoute: SignupProfileRoute,
+  SignupReviewRoute: SignupReviewRoute,
+  SignupRoleRoute: SignupRoleRoute,
+  SignupSuccessRoute: SignupSuccessRoute,
+}
+
+const SignupRouteWithChildren =
+  SignupRoute._addFileChildren(SignupRouteChildren)
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AboutRoute: AboutRoute,
+  CampaignsRoute: CampaignsRoute,
   ExploreRoute: ExploreRoute,
+  GetStartedRoute: GetStartedRoute,
+  LoginRoute: LoginRoute,
+  NgosRoute: NgosRoute,
+  SignupRoute: SignupRouteWithChildren,
+  VolunteersRoute: VolunteersRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

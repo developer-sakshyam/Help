@@ -41,7 +41,13 @@ export const opportunities: Opportunity[] = [
     title: "Urgent O+ Blood Needed",
     description:
       "A patient at Kathmandu Community Hospital needs an urgent O+ transfusion for surgery. Donors with this blood type are needed today.",
-    location: { province: "Bagmati", district: "Kathmandu", city: "Kathmandu", lat: 27.7172, lng: 85.3240 },
+    location: {
+      province: "Bagmati",
+      district: "Kathmandu",
+      city: "Kathmandu",
+      lat: 27.7172,
+      lng: 85.324,
+    },
     bloodGroup: "O+",
     urgency: "urgent",
     status: "open",
@@ -56,7 +62,13 @@ export const opportunities: Opportunity[] = [
     title: "Community Cleanup in Lalitpur",
     description:
       "Join local volunteers to clear public spaces and restore shared gardens in Lalitpur. Tools and water are provided.",
-    location: { province: "Bagmati", district: "Lalitpur", city: "Lalitpur", lat: 27.6634, lng: 85.3188 },
+    location: {
+      province: "Bagmati",
+      district: "Lalitpur",
+      city: "Lalitpur",
+      lat: 27.6634,
+      lng: 85.3188,
+    },
     urgency: "normal",
     status: "available",
     organization: "Lalitpur Green Network",
@@ -70,7 +82,13 @@ export const opportunities: Opportunity[] = [
     title: "Food Parcel Distribution",
     description:
       "Packaged food donations are needed for families in Bhaktapur after the recent monsoon shortages.",
-    location: { province: "Bagmati", district: "Bhaktapur", city: "Bhaktapur", lat: 27.6717, lng: 85.4290 },
+    location: {
+      province: "Bagmati",
+      district: "Bhaktapur",
+      city: "Bhaktapur",
+      lat: 27.6717,
+      lng: 85.429,
+    },
     urgency: "normal",
     status: "open",
     organization: "Bhaktapur Relief Collective",
@@ -84,7 +102,13 @@ export const opportunities: Opportunity[] = [
     title: "Mobile Health Camp in Pokhara",
     description:
       "A free health clinic is being organized for Pokhara residents. Medical professionals and supplies are needed.",
-    location: { province: "Gandaki", district: "Kaski", city: "Pokhara", lat: 28.2096, lng: 83.9856 },
+    location: {
+      province: "Gandaki",
+      district: "Kaski",
+      city: "Pokhara",
+      lat: 28.2096,
+      lng: 83.9856,
+    },
     urgency: "normal",
     status: "available",
     organization: "Pokhara Health Partnership",
@@ -98,7 +122,13 @@ export const opportunities: Opportunity[] = [
     title: "Warm Clothing for Mountain Families",
     description:
       "Collect and deliver warm jackets and blankets to families living in high-altitude communities near Jomsom.",
-    location: { province: "Gandaki", district: "Mustang", city: "Jomsom", lat: 28.7769, lng: 83.7298 },
+    location: {
+      province: "Gandaki",
+      district: "Mustang",
+      city: "Jomsom",
+      lat: 28.7769,
+      lng: 83.7298,
+    },
     urgency: "urgent",
     status: "open",
     organization: "Himalayan Care Network",
@@ -112,7 +142,13 @@ export const opportunities: Opportunity[] = [
     title: "School Books for Chitwan Children",
     description:
       "New and gently used textbooks are requested for primary schools in Chitwan to support the new school term.",
-    location: { province: "Bagmati", district: "Chitwan", city: "Bharatpur", lat: 27.6792, lng: 84.4286 },
+    location: {
+      province: "Bagmati",
+      district: "Chitwan",
+      city: "Bharatpur",
+      lat: 27.6792,
+      lng: 84.4286,
+    },
     urgency: "normal",
     status: "open",
     organization: "Chitwan Learning Collective",
@@ -126,7 +162,13 @@ export const opportunities: Opportunity[] = [
     title: "Furniture Drive for Local Shelter",
     description:
       "Help furnish a shelter in Birgunj with beds, tables, and storage for families recovering from recent floods.",
-    location: { province: "Madhesh", district: "Parsa", city: "Birgunj", lat: 27.0000, lng: 84.8667 },
+    location: {
+      province: "Madhesh",
+      district: "Parsa",
+      city: "Birgunj",
+      lat: 27.0,
+      lng: 84.8667,
+    },
     urgency: "normal",
     status: "available",
     organization: "Parsa Community Support",
@@ -140,7 +182,13 @@ export const opportunities: Opportunity[] = [
     title: "Tablet Donations for Remote Schools",
     description:
       "Remote learning centers in Jhapa need tablets and power banks for students with limited access to classrooms.",
-    location: { province: "Koshi", district: "Jhapa", city: "Birtamod", lat: 26.4833, lng: 88.0667 },
+    location: {
+      province: "Koshi",
+      district: "Jhapa",
+      city: "Birtamod",
+      lat: 26.4833,
+      lng: 88.0667,
+    },
     urgency: "normal",
     status: "open",
     organization: "Jhapa Digital Access",
@@ -154,7 +202,13 @@ export const opportunities: Opportunity[] = [
     title: "A- Blood Drive for Emergency Ward",
     description:
       "A local emergency ward in Dharan is asking for A- donors to support multiple surgeries this week.",
-    location: { province: "Koshi", district: "Sunsari", city: "Dharan", lat: 26.8120, lng: 87.2838 },
+    location: {
+      province: "Koshi",
+      district: "Sunsari",
+      city: "Dharan",
+      lat: 26.812,
+      lng: 87.2838,
+    },
     bloodGroup: "A-",
     urgency: "urgent",
     status: "open",
@@ -169,7 +223,13 @@ export const opportunities: Opportunity[] = [
     title: "Library Restoration Volunteers",
     description:
       "Volunteers are needed to clean, organize, and reopen a community library in Nepalgunj.",
-    location: { province: "Lumbini", district: "Banke", city: "Nepalgunj", lat: 28.0588, lng: 81.6174 },
+    location: {
+      province: "Lumbini",
+      district: "Banke",
+      city: "Nepalgunj",
+      lat: 28.0588,
+      lng: 81.6174,
+    },
     urgency: "normal",
     status: "available",
     organization: "Banke Book Circle",
@@ -183,7 +243,13 @@ export const opportunities: Opportunity[] = [
     title: "Medicine Refill Support for Rural Clinic",
     description:
       "A rural clinic in Kailali needs funding and transport support for essential medicines.",
-    location: { province: "Sudurpashchim", district: "Kailali", city: "Dhangadhi", lat: 28.6983, lng: 80.5996 },
+    location: {
+      province: "Sudurpashchim",
+      district: "Kailali",
+      city: "Dhangadhi",
+      lat: 28.6983,
+      lng: 80.5996,
+    },
     urgency: "urgent",
     status: "open",
     organization: "Kailali Health Collective",
@@ -197,7 +263,13 @@ export const opportunities: Opportunity[] = [
     title: "Community Kitchen Support in Biratnagar",
     description:
       "The community kitchen needs food supplies and volunteers to serve families in need.",
-    location: { province: "Koshi", district: "Morang", city: "Biratnagar", lat: 26.4525, lng: 87.2718 },
+    location: {
+      province: "Koshi",
+      district: "Morang",
+      city: "Biratnagar",
+      lat: 26.4525,
+      lng: 87.2718,
+    },
     urgency: "normal",
     status: "available",
     organization: "Biratnagar Care Kitchen",
@@ -211,7 +283,13 @@ export const opportunities: Opportunity[] = [
     title: "Reading Corner for Rural School",
     description:
       "Build a reading corner and donate books to a school in Nawalparasi.",
-    location: { province: "Lumbini", district: "Nawalparasi", city: "Bardaghat", lat: 27.6429, lng: 83.5625 },
+    location: {
+      province: "Lumbini",
+      district: "Nawalparasi",
+      city: "Bardaghat",
+      lat: 27.6429,
+      lng: 83.5625,
+    },
     urgency: "normal",
     status: "open",
     organization: "Lumbini Learning Trust",
@@ -225,7 +303,13 @@ export const opportunities: Opportunity[] = [
     title: "Power Banks for Remote Health Volunteers",
     description:
       "Help deliver power banks to volunteers working in mobile health clinics in remote districts.",
-    location: { province: "Karnali", district: "Jumla", city: "Jumla", lat: 29.2798, lng: 82.1889 },
+    location: {
+      province: "Karnali",
+      district: "Jumla",
+      city: "Jumla",
+      lat: 29.2798,
+      lng: 82.1889,
+    },
     urgency: "normal",
     status: "available",
     organization: "Karnali Care Corps",
@@ -239,7 +323,13 @@ export const opportunities: Opportunity[] = [
     title: "Sunsari School Painting Day",
     description:
       "Volunteers are needed to paint classrooms and classrooms in a Sunsari school ahead of reopening.",
-    location: { province: "Koshi", district: "Sunsari", city: "Inaruwa", lat: 26.6381, lng: 87.2125 },
+    location: {
+      province: "Koshi",
+      district: "Sunsari",
+      city: "Inaruwa",
+      lat: 26.6381,
+      lng: 87.2125,
+    },
     urgency: "normal",
     status: "available",
     organization: "Sunsari Youth Action",
@@ -253,7 +343,13 @@ export const opportunities: Opportunity[] = [
     title: "AB+ Blood Request for Surgery",
     description:
       "The neonatal unit in Pokhara needs an AB+ blood donor for a scheduled surgery.",
-    location: { province: "Gandaki", district: "Kaski", city: "Pokhara", lat: 28.2096, lng: 83.9856 },
+    location: {
+      province: "Gandaki",
+      district: "Kaski",
+      city: "Pokhara",
+      lat: 28.2096,
+      lng: 83.9856,
+    },
     bloodGroup: "AB+",
     urgency: "urgent",
     status: "open",
@@ -268,7 +364,13 @@ export const opportunities: Opportunity[] = [
     title: "First Aid Kits for Flood Response",
     description:
       "A rapid response team in Banke needs first aid kits and medical supplies for flood-affected villages.",
-    location: { province: "Lumbini", district: "Banke", city: "Nepalgunj", lat: 28.0588, lng: 81.6174 },
+    location: {
+      province: "Lumbini",
+      district: "Banke",
+      city: "Nepalgunj",
+      lat: 28.0588,
+      lng: 81.6174,
+    },
     urgency: "urgent",
     status: "open",
     organization: "Banke Relief Network",
@@ -282,7 +384,13 @@ export const opportunities: Opportunity[] = [
     title: "Blankets for Winter Shelter",
     description:
       "Blankets and warm clothing are requested for a temporary shelter in Tulsipur.",
-    location: { province: "Lumbini", district: "Dang", city: "Tulsipur", lat: 28.0561, lng: 82.2877 },
+    location: {
+      province: "Lumbini",
+      district: "Dang",
+      city: "Tulsipur",
+      lat: 28.0561,
+      lng: 82.2877,
+    },
     urgency: "normal",
     status: "available",
     organization: "Dang Care Initiative",
@@ -296,7 +404,13 @@ export const opportunities: Opportunity[] = [
     title: "Rice Distribution for Kailali",
     description:
       "A food distribution effort needs rice sacks and volunteer drivers in Kailali district.",
-    location: { province: "Sudurpashchim", district: "Kailali", city: "Dhangadhi", lat: 28.6983, lng: 80.5996 },
+    location: {
+      province: "Sudurpashchim",
+      district: "Kailali",
+      city: "Dhangadhi",
+      lat: 28.6983,
+      lng: 80.5996,
+    },
     urgency: "normal",
     status: "open",
     organization: "Sudurpashchim Food Relief",
@@ -310,7 +424,13 @@ export const opportunities: Opportunity[] = [
     title: "Solar Chargers for Remote School",
     description:
       "Solar chargers are needed to power tablets at a remote school in Taplejung.",
-    location: { province: "Koshi", district: "Taplejung", city: "Taplejung", lat: 27.3343, lng: 87.2638 },
+    location: {
+      province: "Koshi",
+      district: "Taplejung",
+      city: "Taplejung",
+      lat: 27.3343,
+      lng: 87.2638,
+    },
     urgency: "normal",
     status: "available",
     organization: "Koshi Education Project",
@@ -324,7 +444,13 @@ export const opportunities: Opportunity[] = [
     title: "Library Repair and Book Drive",
     description:
       "Support repair work and book donations at a community library in Bharatpur.",
-    location: { province: "Bagmati", district: "Chitwan", city: "Bharatpur", lat: 27.6792, lng: 84.4286 },
+    location: {
+      province: "Bagmati",
+      district: "Chitwan",
+      city: "Bharatpur",
+      lat: 27.6792,
+      lng: 84.4286,
+    },
     urgency: "normal",
     status: "available",
     organization: "Chitwan Education Coalition",
@@ -338,7 +464,13 @@ export const opportunities: Opportunity[] = [
     title: "Water Safety Training in Bhaktapur",
     description:
       "Volunteers with training experience are needed to support a water safety program for children.",
-    location: { province: "Bagmati", district: "Bhaktapur", city: "Bhaktapur", lat: 27.6717, lng: 85.4290 },
+    location: {
+      province: "Bagmati",
+      district: "Bhaktapur",
+      city: "Bhaktapur",
+      lat: 27.6717,
+      lng: 85.429,
+    },
     urgency: "normal",
     status: "available",
     organization: "Bhaktapur Child Safety",
@@ -352,7 +484,13 @@ export const opportunities: Opportunity[] = [
     title: "Emergency Oxygen Supplies",
     description:
       "A clinic in Pokhara needs oxygen cylinders and logistics support for a respiratory response team.",
-    location: { province: "Gandaki", district: "Kaski", city: "Pokhara", lat: 28.2096, lng: 83.9856 },
+    location: {
+      province: "Gandaki",
+      district: "Kaski",
+      city: "Pokhara",
+      lat: 28.2096,
+      lng: 83.9856,
+    },
     urgency: "urgent",
     status: "open",
     organization: "Pokhara Relief Agency",
@@ -366,7 +504,13 @@ export const opportunities: Opportunity[] = [
     title: "Shoes for School Children",
     description:
       "New shoes are requested for children attending school in Janakpur.",
-    location: { province: "Madhesh", district: "Dhanusha", city: "Janakpur", lat: 26.7284, lng: 85.9240 },
+    location: {
+      province: "Madhesh",
+      district: "Dhanusha",
+      city: "Janakpur",
+      lat: 26.7284,
+      lng: 85.924,
+    },
     urgency: "normal",
     status: "available",
     organization: "Madhesh Child Support",

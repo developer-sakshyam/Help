@@ -294,10 +294,12 @@
   border: 1px solid var(--border);
   border-radius: 1rem;
   background: var(--surface);
-  transition: border-color 180ms ease, transform 180ms ease, background 180ms ease;
-}a
-
-.about-category-row:hover,
+  transition:
+    border-color 180ms ease,
+    transform 180ms ease,
+    background 180ms ease;
+}
+a .about-category-row:hover,
 .about-category-row.active {
   border-color: var(--foreground);
   background: rgba(49, 43, 43, 0.795);
@@ -408,7 +410,9 @@
   border-radius: 1rem;
   background: var(--surface);
   text-align: left;
-  transition: border-color 180ms ease, transform 180ms ease;
+  transition:
+    border-color 180ms ease,
+    transform 180ms ease;
 }
 
 .about-trust-row:hover {

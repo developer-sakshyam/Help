@@ -1,4 +1,4 @@
-import { useLayoutEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 import { ArrowRight } from "lucide-react";
 import heroImage from "@/assets/hero-nepal.jpg";
 import { AnimatedButton } from "@/components/AnimatedButton";
@@ -21,13 +21,17 @@ export function HeroScrollExpand() {
   const detailsRef = useRef<HTMLDivElement>(null);
   const cueRef = useRef<HTMLDivElement>(null);
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     registerGsap();
     const root = rootRef.current;
     if (!root) return;
 
     const finalState = () => {
-      gsap.set(frameRef.current, { width: "100vw", height: "100vh", borderRadius: 0 });
+      gsap.set(frameRef.current, {
+        width: "100vw",
+        height: "100vh",
+        borderRadius: 0,
+      });
       gsap.set(scrimRef.current, { opacity: 0.55 });
       gsap.set([navRef.current, detailsRef.current], { opacity: 1, y: 0 });
       gsap.set(cueRef.current, { opacity: 0 });
@@ -41,13 +45,23 @@ export function HeroScrollExpand() {
     const ctx = gsap.context(() => {
       const words = mottoRef.current?.querySelectorAll("span[data-word]") ?? [];
 
-      gsap.set(frameRef.current, { width: "38vw", height: "58vh", borderRadius: 10 });
+      gsap.set(frameRef.current, {
+        width: "38vw",
+        height: "58vh",
+        borderRadius: 10,
+      });
       gsap.set(scrimRef.current, { opacity: 0.94 });
       gsap.set(navRef.current, { opacity: 0, y: -24 });
       gsap.set(detailsRef.current, { opacity: 0, y: 24 });
 
       // Entrance: motto words rise in, nothing else exists yet.
-      gsap.from(words, { yPercent: 110, opacity: 0, duration: 1.2, stagger: 0.09, delay: 0.15 });
+      gsap.from(words, {
+        yPercent: 110,
+        opacity: 0,
+        duration: 1.2,
+        stagger: 0.09,
+        delay: 0.15,
+      });
       gsap.from(cueRef.current, { opacity: 0, duration: 1, delay: 1.3 });
 
       const tl = gsap.timeline({
@@ -66,13 +80,31 @@ export function HeroScrollExpand() {
       tl.to(cueRef.current, { opacity: 0, duration: 0.06 }, 0)
         .to(
           frameRef.current,
-          { width: "100vw", height: "100vh", borderRadius: 0, duration: 0.5, ease: "power2.inOut" },
+          {
+            width: "100vw",
+            height: "100vh",
+            borderRadius: 0,
+            duration: 0.5,
+            ease: "power2.inOut",
+          },
           0,
         )
         .to(scrimRef.current, { opacity: 0.55, duration: 0.5 }, 0)
-        .to(mottoRef.current, { scale: 0.86, y: "-6vh", duration: 0.5, ease: "power2.inOut" }, 0)
-        .to(navRef.current, { opacity: 1, y: 0, duration: 0.16, ease: "power2.out" }, 0.42)
-        .to(detailsRef.current, { opacity: 1, y: 0, duration: 0.2, ease: "power2.out" }, 0.5);
+        .to(
+          mottoRef.current,
+          { scale: 0.86, y: "-6vh", duration: 0.5, ease: "power2.inOut" },
+          0,
+        )
+        .to(
+          navRef.current,
+          { opacity: 1, y: 0, duration: 0.16, ease: "power2.out" },
+          0.42,
+        )
+        .to(
+          detailsRef.current,
+          { opacity: 1, y: 0, duration: 0.2, ease: "power2.out" },
+          0.5,
+        );
     }, root);
 
     return () => ctx.revert();
@@ -97,7 +129,11 @@ export function HeroScrollExpand() {
             height={1280}
             className="size-full object-cover"
           />
-          <div ref={scrimRef} className="absolute inset-0 bg-ink" style={{ opacity: 0.94 }} />
+          <div
+            ref={scrimRef}
+            className="absolute inset-0 bg-ink"
+            style={{ opacity: 0.94 }}
+          />
         </div>
 
         <div className="relative z-10 flex flex-col items-center px-6 text-center">
@@ -106,7 +142,10 @@ export function HeroScrollExpand() {
             className="display max-w-[16ch] text-[clamp(2.75rem,8vw,7rem)] text-ink-foreground"
           >
             {["Helping", "Should", "Be", "Simple."].map((word) => (
-              <span key={word} className="inline-block overflow-hidden align-bottom">
+              <span
+                key={word}
+                className="inline-block overflow-hidden align-bottom"
+              >
                 <span data-word className="inline-block pr-[0.22em]">
                   {word}
                 </span>
@@ -114,20 +153,29 @@ export function HeroScrollExpand() {
             ))}
           </h1>
 
-          <div ref={detailsRef} className="mt-8 flex flex-col items-center opacity-0">
+          <div
+            ref={detailsRef}
+            className="mt-8 flex flex-col items-center opacity-0"
+          >
             <p className="max-w-[52ch] text-balance text-sm leading-relaxed text-ink-foreground/75 sm:text-base">
-              One platform connecting donors, volunteers, NGOs, organizations, hospitals, and
-              communities across Nepal.
+              One platform connecting donors, volunteers, NGOs, organizations,
+              hospitals, and communities across Nepal.
             </p>
             <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
-                <AnimatedButton asChild>
-                <a href="/signup" className="inline-flex items-center gap-2 rounded-md text-sm font-medium text-brand-foreground">
+              <AnimatedButton asChild>
+                <a
+                  href="/signup"
+                  className="inline-flex items-center gap-2 rounded-md text-sm font-medium text-brand-foreground"
+                >
                   Get Started
                   <ArrowRight className="size-4 transition-transform group-hover:translate-x-0.5" />
                 </a>
               </AnimatedButton>
               <AnimatedButton asChild>
-                <a href="/explore" className="inline-flex rounded-md border border-ink-foreground/25 text-sm font-medium text-ink-foreground transition-colors hover:border-ink-foreground/60">
+                <a
+                  href="/explore"
+                  className="inline-flex rounded-md border border-ink-foreground/25 text-sm font-medium text-ink-foreground transition-colors hover:border-ink-foreground/60"
+                >
                   Explore Opportunities
                 </a>
               </AnimatedButton>

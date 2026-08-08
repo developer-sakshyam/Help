@@ -15,14 +15,23 @@ export function SiteNav() {
   return (
     <header className="border-b border-border bg-background/85 backdrop-blur-md">
       <div className="shell flex h-16 items-center justify-between gap-8">
-        <Link to="/" className="flex items-center gap-2.5" aria-label="Help.com home">
+        <Link
+          to="/"
+          className="flex items-center gap-2.5"
+          aria-label="Help.com home"
+        >
           <span className="grid size-7 place-items-center rounded-md bg-brand text-brand-foreground">
             <span className="font-display text-base leading-none">H</span>
           </span>
-          <span className="text-[0.95rem] font-semibold tracking-tight">Help.com</span>
+          <span className="text-[0.95rem] font-semibold tracking-tight">
+            Help.com
+          </span>
         </Link>
 
-        <nav aria-label="Primary" className="hidden items-center gap-8 text-sm md:flex">
+        <nav
+          aria-label="Primary"
+          className="hidden items-center gap-8 text-sm md:flex"
+        >
           {NAV_LINKS.map((link) => (
             <a key={link.label} href={link.to} className="nav-link">
               {link.label}

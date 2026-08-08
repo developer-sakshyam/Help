@@ -1,4 +1,11 @@
-import { createContext, useCallback, useContext, useEffect, useMemo, useState } from "react";
+import {
+  createContext,
+  useCallback,
+  useContext,
+  useEffect,
+  useMemo,
+  useState,
+} from "react";
 
 export type Theme = "light" | "dark" | "system";
 
@@ -14,7 +21,9 @@ const ThemeContext = createContext<ThemeContextValue | null>(null);
 
 function systemTheme(): "light" | "dark" {
   if (typeof window === "undefined") return "light";
-  return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+  return window.matchMedia("(prefers-color-scheme: dark)").matches
+    ? "dark"
+    : "light";
 }
 
 export function ThemeProvider({ children }: { children: React.ReactNode }) {
@@ -34,7 +43,10 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
     root.classList.add("theme-switching");
     root.classList.toggle("dark", resolved === "dark");
     root.style.colorScheme = resolved;
-    const timer = window.setTimeout(() => root.classList.remove("theme-switching"), 400);
+    const timer = window.setTimeout(
+      () => root.classList.remove("theme-switching"),
+      400,
+    );
     return () => window.clearTimeout(timer);
   }, [theme]);
 
@@ -52,7 +64,9 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
   }, []);
 
   const toggleTheme = useCallback(() => {
-    setTheme(document.documentElement.classList.contains("dark") ? "light" : "dark");
+    setTheme(
+      document.documentElement.classList.contains("dark") ? "light" : "dark",
+    );
   }, [setTheme]);
 
   const value = useMemo(
@@ -60,7 +74,9 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
     [theme, resolvedTheme, setTheme, toggleTheme],
   );
 
-  return <ThemeContext.Provider value={value}>{children}</ThemeContext.Provider>;
+  return (
+    <ThemeContext.Provider value={value}>{children}</ThemeContext.Provider>
+  );
 }
 
 export function useTheme() {

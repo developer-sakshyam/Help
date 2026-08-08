@@ -1,6 +1,12 @@
-import { useLayoutEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Link, createFileRoute } from "@tanstack/react-router";
-import { ArrowRight, CheckCircle2, Heart, ShieldCheck, Users } from "lucide-react";
+import {
+  ArrowRight,
+  CheckCircle2,
+  Heart,
+  ShieldCheck,
+  Users,
+} from "lucide-react";
 import { AnimatedButton } from "@/components/AnimatedButton";
 import { SiteFooter } from "@/components/site/site-footer";
 import { SiteNav } from "@/components/site/site-nav";
@@ -38,19 +44,23 @@ const processSteps = [
 const connectionItems = [
   {
     title: "Donors",
-    description: "Share food, blood, supplies, and volunteer support with the people who need it most.",
+    description:
+      "Share food, blood, supplies, and volunteer support with the people who need it most.",
   },
   {
     title: "Receivers",
-    description: "Find support from verified donors, volunteers, and organizations.",
+    description:
+      "Find support from verified donors, volunteers, and organizations.",
   },
   {
     title: "Volunteers",
-    description: "Discover meaningful ways to help the community with time, skills, and care.",
+    description:
+      "Discover meaningful ways to help the community with time, skills, and care.",
   },
   {
     title: "NGOs & Organizations",
-    description: "Coordinate donations, manage requests, and connect with on-the-ground helpers.",
+    description:
+      "Coordinate donations, manage requests, and connect with on-the-ground helpers.",
   },
 ] as const;
 
@@ -58,12 +68,14 @@ const trustPoints = [
   {
     icon: ShieldCheck,
     title: "Verification",
-    detail: "Clear guidance for users, NGOs, and organizations so support reaches trusted requests.",
+    detail:
+      "Clear guidance for users, NGOs, and organizations so support reaches trusted requests.",
   },
   {
     icon: CheckCircle2,
     title: "Confirmation",
-    detail: "Designed to make contributions easier to track and feel more reliable.",
+    detail:
+      "Designed to make contributions easier to track and feel more reliable.",
   },
   {
     icon: Users,
@@ -73,7 +85,8 @@ const trustPoints = [
   {
     icon: Heart,
     title: "Moderation",
-    detail: "A trusted platform needs safeguards for people, requests, and participation.",
+    detail:
+      "A trusted platform needs safeguards for people, requests, and participation.",
   },
 ] as const;
 
@@ -88,13 +101,15 @@ const categories = [
     id: "food",
     label: "FOOD",
     description: "Put useful food where it is needed",
-    detail: "Match surplus supplies with families and shelters that can use them.",
+    detail:
+      "Match surplus supplies with families and shelters that can use them.",
   },
   {
     id: "clothing",
     label: "CLOTHING",
     description: "Give usable clothing another life",
-    detail: "Support people in need with warm, practical clothing and essentials.",
+    detail:
+      "Support people in need with warm, practical clothing and essentials.",
   },
   {
     id: "medical",
@@ -106,7 +121,8 @@ const categories = [
     id: "volunteers",
     label: "VOLUNTEERS",
     description: "Find opportunities to give your time",
-    detail: "Discover meaningful ways to help through verified volunteer roles.",
+    detail:
+      "Discover meaningful ways to help through verified volunteer roles.",
   },
 ] as const;
 
@@ -114,9 +130,17 @@ export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
       { title: "Help.com — About" },
-      { name: "description", content: "About Help.com: connecting donors, volunteers, NGOs, and communities." },
+      {
+        name: "description",
+        content:
+          "About Help.com: connecting donors, volunteers, NGOs, and communities.",
+      },
       { property: "og:title", content: "Help.com — About" },
-      { property: "og:description", content: "About Help.com: connecting donors, volunteers, NGOs, and communities." },
+      {
+        property: "og:description",
+        content:
+          "About Help.com: connecting donors, volunteers, NGOs, and communities.",
+      },
     ],
   }),
   component: AboutPage,
@@ -130,7 +154,7 @@ function AboutPage() {
   const trustRef = useRef<HTMLDivElement>(null);
   const ctaRef = useRef<HTMLDivElement>(null);
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     registerGsap();
     if (prefersReducedMotion()) return;
     if (!heroRef.current) return;
@@ -185,9 +209,18 @@ function AboutPage() {
         });
       };
 
-      revealSection(problemRef.current, ".about-problem-title span, .about-problem-divider, .about-problem-item");
-      revealSection(categoriesRef.current, ".about-category-row, .about-category-preview");
-      revealSection(timelineRef.current, ".about-timeline-step, .about-timeline-line");
+      revealSection(
+        problemRef.current,
+        ".about-problem-title span, .about-problem-divider, .about-problem-item",
+      );
+      revealSection(
+        categoriesRef.current,
+        ".about-category-row, .about-category-preview",
+      );
+      revealSection(
+        timelineRef.current,
+        ".about-timeline-step, .about-timeline-line",
+      );
       revealSection(trustRef.current, ".about-trust-row");
       revealSection(ctaRef.current, ".about-final-panel");
 
@@ -206,7 +239,6 @@ function AboutPage() {
           },
         },
       );
-
     });
 
     return () => ctx.revert();
@@ -226,12 +258,16 @@ function AboutPage() {
                 <span>be hard to find.</span>
               </h1>
               <p className="about-hero-paragraph">
-                Help.com connects people who want to help with people who need it, through a modern
-                humanitarian platform built for clarity, trust, and speed.
+                Help.com connects people who want to help with people who need
+                it, through a modern humanitarian platform built for clarity,
+                trust, and speed.
               </p>
               <div className="about-hero-actions">
                 <AnimatedButton asChild>
-                  <Link to="/explore" className="inline-flex items-center gap-2 rounded-md px-6 py-3">
+                  <Link
+                    to="/explore"
+                    className="inline-flex items-center gap-2 rounded-md px-6 py-3"
+                  >
                     Explore Help.com
                     <ArrowRight className="size-4" />
                   </Link>
@@ -288,21 +324,32 @@ function AboutPage() {
               </div>
               <div className="about-problem-item">
                 <span className="about-problem-number">03</span>
-                <p>Organizations struggle to connect with volunteers and resources.</p>
+                <p>
+                  Organizations struggle to connect with volunteers and
+                  resources.
+                </p>
               </div>
             </div>
           </div>
         </section>
 
-        <section ref={categoriesRef} className="about-section about-categories shell">
+        <section
+          ref={categoriesRef}
+          className="about-section about-categories shell"
+        >
           <div className="about-section-head">
             <p className="eyebrow">WHAT HELP.COM CONNECTS</p>
-            <h2 className="about-section-title">A single place for people, organizations, and support.</h2>
+            <h2 className="about-section-title">
+              A single place for people, organizations, and support.
+            </h2>
           </div>
           <CategoryGrid />
         </section>
 
-        <section ref={timelineRef} className="about-section about-timeline shell">
+        <section
+          ref={timelineRef}
+          className="about-section about-timeline shell"
+        >
           <div className="about-section-head">
             <p className="eyebrow">HOW IT WORKS</p>
             <h2 className="about-section-title">From intention to impact.</h2>
@@ -325,12 +372,18 @@ function AboutPage() {
 
         <section ref={trustRef} className="about-section about-trust shell">
           <p className="eyebrow">TRUST MATTERS</p>
-          <h2 className="about-section-title">Helping people means protecting them too.</h2>
+          <h2 className="about-section-title">
+            Helping people means protecting them too.
+          </h2>
           <div className="about-trust-list">
             {trustPoints.map((point, index) => {
               const Icon = point.icon;
               return (
-                <button key={point.title} type="button" className="about-trust-row">
+                <button
+                  key={point.title}
+                  type="button"
+                  className="about-trust-row"
+                >
                   <div className="about-trust-row-index">0{index + 1}</div>
                   <div className="about-trust-row-main">
                     <div className="about-trust-row-heading">
@@ -353,7 +406,10 @@ function AboutPage() {
             </div>
             <div className="about-final-actions">
               <AnimatedButton asChild>
-                <Link to="/explore" className="inline-flex items-center gap-2 rounded-md px-6 py-3">
+                <Link
+                  to="/explore"
+                  className="inline-flex items-center gap-2 rounded-md px-6 py-3"
+                >
                   Explore
                 </Link>
               </AnimatedButton>
@@ -377,8 +433,11 @@ function AboutPage() {
 }
 
 function CategoryGrid() {
-  const [activeCategory, setActiveCategory] = useState(categories[0].id);
-  const active = categories.find((item) => item.id === activeCategory) ?? categories[0];
+  const [activeCategory, setActiveCategory] = useState<string>(
+    categories[0].id,
+  );
+  const active =
+    categories.find((item) => item.id === activeCategory) ?? categories[0];
 
   const hoverArrow = (event: React.MouseEvent<HTMLButtonElement>) => {
     const arrow = event.currentTarget.querySelector(".about-category-arrow");
@@ -425,7 +484,13 @@ function CategoryGrid() {
 
       <div className="about-category-preview">
         <div className="about-category-preview-image">
-          <img src={heroImage} alt={active.label} loading="lazy" width={1200} height={900} />
+          <img
+            src={heroImage}
+            alt={active.label}
+            loading="lazy"
+            width={1200}
+            height={900}
+          />
         </div>
         <div className="about-category-preview-copy">
           <span className="eyebrow">{active.label}</span>

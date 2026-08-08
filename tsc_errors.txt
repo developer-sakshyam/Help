@@ -1,0 +1,76 @@
+src/components/AccordionGallery.tsx(66,13): error TS2345: Argument of type '() => (() => gsap.core.Timeline) | undefined' is not assignable to parameter of type 'EffectCallback'.
+  Type '(() => Timeline) | undefined' is not assignable to type 'void | Destructor'.
+    Type '() => gsap.core.Timeline' is not assignable to type 'void | Destructor'.
+      Type '() => gsap.core.Timeline' is not assignable to type 'Destructor'.
+        Type 'Timeline' is not assignable to type 'void | { [UNDEFINED_VOID_ONLY]: never; }'.
+src/components/AccordionGallery.tsx(121,11): error TS2322: Type '(el: HTMLDivElement | null) => HTMLDivElement | null' is not assignable to type 'Ref<HTMLDivElement> | undefined'.
+  Type '(el: HTMLDivElement | null) => HTMLDivElement | null' is not assignable to type '(instance: HTMLDivElement | null) => void | (() => VoidOrUndefinedOnly)'.
+    Type 'HTMLDivElement | null' is not assignable to type 'void | (() => VoidOrUndefinedOnly)'.
+      Type 'null' is not assignable to type 'void | (() => VoidOrUndefinedOnly)'.
+src/components/AnimatedButton.tsx(7,18): error TS2320: Interface 'AnimatedButtonProps' cannot simultaneously extend types 'ButtonHTMLAttributes<HTMLButtonElement>' and 'AnchorHTMLAttributes<HTMLAnchorElement>'.
+  Named property 'onAbort' of types 'ButtonHTMLAttributes<HTMLButtonElement>' and 'AnchorHTMLAttributes<HTMLAnchorElement>' are not identical.
+src/components/AnimatedButton.tsx(51,53): error TS18046: 'children.props' is of type 'unknown'.
+src/components/AnimatedButton.tsx(54,11): error TS18046: 'children.props' is of type 'unknown'.
+src/components/AnimatedButton.tsx(58,11): error TS18046: 'children.props' is of type 'unknown'.
+src/components/AnimatedButton.tsx(61,9): error TS2769: No overload matches this call.
+  The last overload gave the following error.
+    Object literal may only specify known properties, and 'children' does not exist in type 'Partial<unknown> & Attributes'.
+src/components/AnimatedButton.tsx(64,56): error TS18046: 'children.props' is of type 'unknown'.
+src/main.tsx(10,12): error TS2322: Type 'string' is not assignable to type 'HydrateWhen'.
+src/routes/about.tsx(234,25): error TS2322: Type '"/explore"' is not assignable to type '"/" | "/about" | "/get-started" | "/login" | "/signup" | "/signup/profile" | "/signup/review" | "/signup/role" | "/signup/success" | "." | ".."'.
+src/routes/about.tsx(356,23): error TS2322: Type '"/explore"' is not assignable to type '"/" | "/about" | "/get-started" | "/login" | "/signup" | "/signup/profile" | "/signup/review" | "/signup/role" | "/signup/success" | "." | ".."'.
+src/routes/about.tsx(412,33): error TS2345: Argument of type '"blood" | "food" | "clothing" | "medical" | "volunteers"' is not assignable to parameter of type 'SetStateAction<"blood">'.
+  Type '"food"' is not assignable to type 'SetStateAction<"blood">'.
+src/routes/get-started.tsx(13,19): error TS18047: 'ref.current' is possibly 'null'.
+src/routes/login.tsx(4,66): error TS7016: Could not find a declaration file for module '../lib/demoAuth'. 'C:/Users/Bhanu School/Documents/love/land/src/lib/demoAuth.js' implicitly has an 'any' type.
+src/routes/login.tsx(16,19): error TS18047: 'ref.current' is possibly 'null'.
+src/routes/login.tsx(24,25): error TS7006: Parameter 'e' implicitly has an 'any' type.
+src/routes/login.tsx(32,33): error TS2345: Argument of type 'string' is not assignable to parameter of type 'NavigateOptions<RouterCore<Route<Register, any, "/", "/", string, "__root__", undefined, {}, { queryClient: QueryClient; }, AnyContext, AnyContext, ... 6 more ..., undefined>, "never", false, RouterHistory, Record<...>>, string, string | undefined, string, "">'.
+  Type 'string' is not assignable to type 'MakeOptionalSearchParams<RouterCore<Route<Register, any, "/", "/", string, "__root__", undefined, {}, { queryClient: QueryClient; }, AnyContext, AnyContext, ... 6 more ..., undefined>, "never", false, RouterHistory, Record<...>>, string, string | undefined>'.
+src/routes/signup/review.tsx(4,38): error TS7016: Could not find a declaration file for module '../../lib/demoAuth'. 'C:/Users/Bhanu School/Documents/love/land/src/lib/demoAuth.js' implicitly has an 'any' type.
+src/routes/signup/review.tsx(17,19): error TS18047: 'ref.current' is possibly 'null'.
+src/routes/signup/review.tsx(24,40): error TS2345: Argument of type 'string' is not assignable to parameter of type 'NavigateOptions<RouterCore<Route<Register, any, "/", "/", string, "__root__", undefined, {}, { queryClient: QueryClient; }, AnyContext, AnyContext, ... 6 more ..., undefined>, "never", false, RouterHistory, Record<...>>, string, string | undefined, string, "">'.
+  Type 'string' is not assignable to type 'MakeOptionalSearchParams<RouterCore<Route<Register, any, "/", "/", string, "__root__", undefined, {}, { queryClient: QueryClient; }, AnyContext, AnyContext, ... 6 more ..., undefined>, "never", false, RouterHistory, Record<...>>, string, string | undefined>'.
+src/routes/signup/review.tsx(34,14): error TS2345: Argument of type 'string' is not assignable to parameter of type 'NavigateOptions<RouterCore<Route<Register, any, "/", "/", string, "__root__", undefined, {}, { queryClient: QueryClient; }, AnyContext, AnyContext, ... 6 more ..., undefined>, "never", false, RouterHistory, Record<...>>, string, string | undefined, string, "">'.
+  Type 'string' is not assignable to type 'MakeOptionalSearchParams<RouterCore<Route<Register, any, "/", "/", string, "__root__", undefined, {}, { queryClient: QueryClient; }, AnyContext, AnyContext, ... 6 more ..., undefined>, "never", false, RouterHistory, Record<...>>, string, string | undefined>'.
+src/routes/signup/review.tsx(46,21): error TS2339: Property 'profileImage' does not exist on type '{}'.
+src/routes/signup/review.tsx(46,51): error TS2339: Property 'profileImage' does not exist on type '{}'.
+src/routes/signup/review.tsx(49,52): error TS2339: Property 'fullName' does not exist on type '{}'.
+src/routes/signup/review.tsx(50,68): error TS2339: Property 'email' does not exist on type '{}'.
+src/routes/signup/review.tsx(56,48): error TS2339: Property 'role' does not exist on type '{}'.
+src/routes/signup/review.tsx(61,49): error TS2339: Property 'province' does not exist on type '{}'.
+src/routes/signup/review.tsx(61,63): error TS2339: Property 'district' does not exist on type '{}'.
+src/routes/signup/review.tsx(61,77): error TS2339: Property 'municipality' does not exist on type '{}'.
+src/routes/signup/review.tsx(64,17): error TS2339: Property 'bio' does not exist on type '{}'.
+src/routes/signup/review.tsx(66,48): error TS2339: Property 'bio' does not exist on type '{}'.
+src/routes/signup/review.tsx(70,43): error TS2345: Argument of type 'string' is not assignable to parameter of type 'NavigateOptions<RouterCore<Route<Register, any, "/", "/", string, "__root__", undefined, {}, { queryClient: QueryClient; }, AnyContext, AnyContext, ... 6 more ..., undefined>, "never", false, RouterHistory, Record<...>>, string, string | undefined, string, "">'.
+  Type 'string' is not assignable to type 'MakeOptionalSearchParams<RouterCore<Route<Register, any, "/", "/", string, "__root__", undefined, {}, { queryClient: QueryClient; }, AnyContext, AnyContext, ... 6 more ..., undefined>, "never", false, RouterHistory, Record<...>>, string, string | undefined>'.
+src/routes/signup/role.tsx(25,19): error TS18047: 'ref.current' is possibly 'null'.
+src/routes/signup/role.tsx(32,40): error TS2345: Argument of type 'string' is not assignable to parameter of type 'NavigateOptions<RouterCore<Route<Register, any, "/", "/", string, "__root__", undefined, {}, { queryClient: QueryClient; }, AnyContext, AnyContext, ... 6 more ..., undefined>, "never", false, RouterHistory, Record<...>>, string, string | undefined, string, "">'.
+  Type 'string' is not assignable to type 'MakeOptionalSearchParams<RouterCore<Route<Register, any, "/", "/", string, "__root__", undefined, {}, { queryClient: QueryClient; }, AnyContext, AnyContext, ... 6 more ..., undefined>, "never", false, RouterHistory, Record<...>>, string, string | undefined>'.
+src/routes/signup/role.tsx(41,14): error TS2345: Argument of type 'string' is not assignable to parameter of type 'NavigateOptions<RouterCore<Route<Register, any, "/", "/", string, "__root__", undefined, {}, { queryClient: QueryClient; }, AnyContext, AnyContext, ... 6 more ..., undefined>, "never", false, RouterHistory, Record<...>>, string, string | undefined, string, "">'.
+  Type 'string' is not assignable to type 'MakeOptionalSearchParams<RouterCore<Route<Register, any, "/", "/", string, "__root__", undefined, {}, { queryClient: QueryClient; }, AnyContext, AnyContext, ... 6 more ..., undefined>, "never", false, RouterHistory, Record<...>>, string, string | undefined>'.
+src/routes/signup/role.tsx(52,57): error TS2345: Argument of type 'string' is not assignable to parameter of type 'SetStateAction<null>'.
+src/routes/signup/role.tsx(60,41): error TS2345: Argument of type 'string' is not assignable to parameter of type 'NavigateOptions<RouterCore<Route<Register, any, "/", "/", string, "__root__", undefined, {}, { queryClient: QueryClient; }, AnyContext, AnyContext, ... 6 more ..., undefined>, "never", false, RouterHistory, Record<...>>, string, string | undefined, string, "">'.
+  Type 'string' is not assignable to type 'MakeOptionalSearchParams<RouterCore<Route<Register, any, "/", "/", string, "__root__", undefined, {}, { queryClient: QueryClient; }, AnyContext, AnyContext, ... 6 more ..., undefined>, "never", false, RouterHistory, Record<...>>, string, string | undefined>'.
+src/routes/signup/success.tsx(8,21): error TS2554: Expected 1 arguments, but got 0.
+src/routes/signup/success.tsx(9,20): error TS2554: Expected 1 arguments, but got 0.
+src/routes/signup/success.tsx(10,22): error TS2554: Expected 1 arguments, but got 0.
+src/routes/signup/success.tsx(14,15): error TS2345: Argument of type 'unknown' is not assignable to parameter of type 'TweenTarget'.
+src/routes/signup/success.tsx(15,15): error TS2769: No overload matches this call.
+  Overload 1 of 2, '(targets: TweenTarget, fromVars: TweenVars, toVars: TweenVars, position?: Position | undefined): Timeline', gave the following error.
+    Argument of type 'unknown' is not assignable to parameter of type 'TweenTarget'.
+  Overload 2 of 2, '(targets: TweenTarget, duration: number, fromVars: TweenVars, toVars: TweenVars, position?: Position | undefined): Timeline', gave the following error.
+    Argument of type 'unknown' is not assignable to parameter of type 'TweenTarget'.
+src/routes/signup/success.tsx(16,15): error TS2345: Argument of type 'unknown' is not assignable to parameter of type 'TweenTarget'.
+src/routes/signup/success.tsx(23,16): error TS2322: Type 'RefObject<unknown>' is not assignable to type 'Ref<HTMLDivElement> | undefined'.
+  Type 'RefObject<unknown>' is not assignable to type 'RefObject<HTMLDivElement | null>'.
+    Type 'unknown' is not assignable to type 'HTMLDivElement | null'.
+src/routes/signup/success.tsx(24,18): error TS2322: Type 'RefObject<unknown>' is not assignable to type 'Ref<SVGSVGElement> | undefined'.
+  Type 'RefObject<unknown>' is not assignable to type 'RefObject<SVGSVGElement | null>'.
+    Type 'unknown' is not assignable to type 'SVGSVGElement | null'.
+src/routes/signup/success.tsx(27,14): error TS2322: Type 'RefObject<unknown>' is not assignable to type 'Ref<HTMLDivElement> | undefined'.
+  Type 'RefObject<unknown>' is not assignable to type 'RefObject<HTMLDivElement | null>'.
+    Type 'unknown' is not assignable to type 'HTMLDivElement | null'.
+src/routes/signup/success.tsx(31,43): error TS2345: Argument of type 'string' is not assignable to parameter of type 'NavigateOptions<RouterCore<Route<Register, any, "/", "/", string, "__root__", undefined, {}, { queryClient: QueryClient; }, AnyContext, AnyContext, ... 6 more ..., undefined>, "never", false, RouterHistory, Record<...>>, string, string | undefined, string, "">'.
+  Type 'string' is not assignable to type 'MakeOptionalSearchParams<RouterCore<Route<Register, any, "/", "/", string, "__root__", undefined, {}, { queryClient: QueryClient; }, AnyContext, AnyContext, ... 6 more ..., undefined>, "never", false, RouterHistory, Record<...>>, string, string | undefined>'.

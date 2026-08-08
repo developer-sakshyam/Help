@@ -10,7 +10,9 @@
   background: transparent;
   border: 1px solid transparent;
   overflow: hidden;
-  transition: color 200ms ease, transform 200ms ease;
+  transition:
+    color 200ms ease,
+    transform 200ms ease;
 }
 
 .animated-button:hover {

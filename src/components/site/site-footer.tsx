@@ -3,11 +3,26 @@ import { NAV_LINKS } from "@/data/landing";
 const COLUMNS = [
   {
     title: "Platform",
-    links: ["Explore", "Campaigns", "Volunteer", "Blood requests", "Donation categories"],
+    links: [
+      "Explore",
+      "Campaigns",
+      "Volunteer",
+      "Blood requests",
+      "Donation categories",
+    ],
   },
-  { title: "Organizations", links: ["For NGOs", "For hospitals", "Verification", "Partnerships"] },
-  { title: "Company", links: ["About", "Impact reports", "Careers", "Press", "Contact"] },
-  { title: "Legal", links: ["Privacy", "Terms", "Data protection", "Trust & safety"] },
+  {
+    title: "Organizations",
+    links: ["For NGOs", "For hospitals", "Verification", "Partnerships"],
+  },
+  {
+    title: "Company",
+    links: ["About", "Impact reports", "Careers", "Press", "Contact"],
+  },
+  {
+    title: "Legal",
+    links: ["Privacy", "Terms", "Data protection", "Trust & safety"],
+  },
 ];
 
 export function SiteFooter() {
@@ -20,11 +35,13 @@ export function SiteFooter() {
               <span className="grid size-7 place-items-center rounded-md bg-brand text-brand-foreground">
                 <span className="font-display text-base leading-none">H</span>
               </span>
-              <span className="text-[0.95rem] font-semibold tracking-tight">Help.com</span>
+              <span className="text-[0.95rem] font-semibold tracking-tight">
+                Help.com
+              </span>
             </div>
             <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
-              A coordination layer for humanitarian work in Nepal — connecting donors, volunteers,
-              NGOs, hospitals, and the people they serve.
+              A coordination layer for humanitarian work in Nepal — connecting
+              donors, volunteers, NGOs, hospitals, and the people they serve.
             </p>
           </div>
 
@@ -36,7 +53,7 @@ export function SiteFooter() {
                   <li key={link}>
                     <a
                       href={NAV_LINKS.find((n) => n.label === link)?.to ?? "#"}
-                      className="text-muted-foreground transition-colors hover:text-foreground"
+                      className="footer-link"
                     >
                       {link}
                     </a>
