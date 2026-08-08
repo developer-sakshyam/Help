@@ -1,0 +1,39 @@
+.animated-button {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.625rem 1.25rem;
+  border-radius: 0.75rem;
+  color: var(--color-brand-foreground);
+  background: transparent;
+  border: 1px solid transparent;
+  overflow: hidden;
+  transition: color 200ms ease, transform 200ms ease;
+}
+
+.animated-button:hover {
+  transform: translateY(-1px);
+}
+
+.animated-button-fill {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, var(--brand), var(--brand-soft));
+  border-radius: inherit;
+  transform: scaleX(0);
+  transform-origin: right center;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.animated-button-content {
+  position: relative;
+  z-index: 1;
+}
+
+.animated-button:hover .animated-button-content,
+.animated-button:focus-visible .animated-button-content {
+  color: var(--color-brand-foreground);
+}
