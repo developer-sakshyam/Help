@@ -53,10 +53,6 @@ ___
 - 👕 **Clothing Donation** - Seasonal and emergency clothing support
 - 📚 **Books & Education** - Educational resources and learning materials
 - 🏥 **Medical Supplies** - Medications, medical equipment, healthcare resources
-- 🪑 **Furniture** - Household furniture and furnishings
-- 💻 **Electronics** - Computer equipment and technology devices
-- 🏠 **Shelter Resources** - Housing support and emergency shelter
-- 💰 **Financial Assistance** - Fundraising coordination and monetary support
 
 Each resource category includes:
 - Resource description and specifications
@@ -104,7 +100,7 @@ ___
 │                     FRONTEND LAYER (React + TSX)                     │
 │  Landing → Auth → Explore → Dashboard → Leaderboard → NGOs → Profile │
 │                                                                       │
-│  Technologies: React 18+, TypeScript, React Router, GSAP, CSS3       │
+│  Technologies: React 18+, TypeScript, React Router, GSAP, CSS3, Lenis │
 └──────────────────────────────┬──────────────────────────────────────┘
                                │
                     ┌──────────▼──────────┐
@@ -158,7 +154,7 @@ ___
 | **React Query** | 3.x | Server state management |
 | **Tailwind CSS** | 3.3+ | Utility-first CSS framework |
 | **Leaflet** | 1.9+ | Map integration |
-| **Chart.js** | 4.x | Data visualization |
+| **Lenis** | 1.3.25 | Smooth Scrolling |
 | **Date-fns** | 2.30+ | Date utilities |
 | **Lodash** | 4.17+ | Utility library |
 | **ESLint** | 8.x | Code linting |
