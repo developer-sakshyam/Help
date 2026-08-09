@@ -12,8 +12,10 @@ import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as CampaignsRouteImport } from './routes/campaigns'
+import { Route as DashboardRouteImport } from './routes/dashboard'
 import { Route as ExploreRouteImport } from './routes/explore'
 import { Route as GetStartedRouteImport } from './routes/get-started'
+import { Route as LeaderboardRouteImport } from './routes/leaderboard'
 import { Route as LoginRouteImport } from './routes/login'
 import { Route as NgosRouteImport } from './routes/ngos'
 import { Route as SignupRouteImport } from './routes/signup'
@@ -38,6 +40,11 @@ const CampaignsRoute = CampaignsRouteImport.update({
   path: '/campaigns',
   getParentRoute: () => rootRouteImport,
 } as any)
+const DashboardRoute = DashboardRouteImport.update({
+  id: '/dashboard',
+  path: '/dashboard',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ExploreRoute = ExploreRouteImport.update({
   id: '/explore',
   path: '/explore',
@@ -46,6 +53,11 @@ const ExploreRoute = ExploreRouteImport.update({
 const GetStartedRoute = GetStartedRouteImport.update({
   id: '/get-started',
   path: '/get-started',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const LeaderboardRoute = LeaderboardRouteImport.update({
+  id: '/leaderboard',
+  path: '/leaderboard',
   getParentRoute: () => rootRouteImport,
 } as any)
 const LoginRoute = LoginRouteImport.update({
@@ -93,8 +105,10 @@ export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/campaigns': typeof CampaignsRoute
+  '/dashboard': typeof DashboardRoute
   '/explore': typeof ExploreRoute
   '/get-started': typeof GetStartedRoute
+  '/leaderboard': typeof LeaderboardRoute
   '/login': typeof LoginRoute
   '/ngos': typeof NgosRoute
   '/signup': typeof SignupRouteWithChildren
@@ -108,8 +122,10 @@ export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/campaigns': typeof CampaignsRoute
+  '/dashboard': typeof DashboardRoute
   '/explore': typeof ExploreRoute
   '/get-started': typeof GetStartedRoute
+  '/leaderboard': typeof LeaderboardRoute
   '/login': typeof LoginRoute
   '/ngos': typeof NgosRoute
   '/signup': typeof SignupRouteWithChildren
@@ -124,8 +140,10 @@ export interface FileRoutesById {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/campaigns': typeof CampaignsRoute
+  '/dashboard': typeof DashboardRoute
   '/explore': typeof ExploreRoute
   '/get-started': typeof GetStartedRoute
+  '/leaderboard': typeof LeaderboardRoute
   '/login': typeof LoginRoute
   '/ngos': typeof NgosRoute
   '/signup': typeof SignupRouteWithChildren
@@ -141,8 +159,10 @@ export interface FileRouteTypes {
     | '/'
     | '/about'
     | '/campaigns'
+    | '/dashboard'
     | '/explore'
     | '/get-started'
+    | '/leaderboard'
     | '/login'
     | '/ngos'
     | '/signup'
@@ -156,8 +176,10 @@ export interface FileRouteTypes {
     | '/'
     | '/about'
     | '/campaigns'
+    | '/dashboard'
     | '/explore'
     | '/get-started'
+    | '/leaderboard'
     | '/login'
     | '/ngos'
     | '/signup'
@@ -171,8 +193,10 @@ export interface FileRouteTypes {
     | '/'
     | '/about'
     | '/campaigns'
+    | '/dashboard'
     | '/explore'
     | '/get-started'
+    | '/leaderboard'
     | '/login'
     | '/ngos'
     | '/signup'
@@ -187,8 +211,10 @@ export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AboutRoute: typeof AboutRoute
   CampaignsRoute: typeof CampaignsRoute
+  DashboardRoute: typeof DashboardRoute
   ExploreRoute: typeof ExploreRoute
   GetStartedRoute: typeof GetStartedRoute
+  LeaderboardRoute: typeof LeaderboardRoute
   LoginRoute: typeof LoginRoute
   NgosRoute: typeof NgosRoute
   SignupRoute: typeof SignupRouteWithChildren
@@ -218,6 +244,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof CampaignsRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/dashboard': {
+      id: '/dashboard'
+      path: '/dashboard'
+      fullPath: '/dashboard'
+      preLoaderRoute: typeof DashboardRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/explore': {
       id: '/explore'
       path: '/explore'
@@ -230,6 +263,13 @@ declare module '@tanstack/react-router' {
       path: '/get-started'
       fullPath: '/get-started'
       preLoaderRoute: typeof GetStartedRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/leaderboard': {
+      id: '/leaderboard'
+      path: '/leaderboard'
+      fullPath: '/leaderboard'
+      preLoaderRoute: typeof LeaderboardRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/login': {
@@ -312,8 +352,10 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AboutRoute: AboutRoute,
   CampaignsRoute: CampaignsRoute,
+  DashboardRoute: DashboardRoute,
   ExploreRoute: ExploreRoute,
   GetStartedRoute: GetStartedRoute,
+  LeaderboardRoute: LeaderboardRoute,
   LoginRoute: LoginRoute,
   NgosRoute: NgosRoute,
   SignupRoute: SignupRouteWithChildren,

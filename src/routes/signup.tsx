@@ -24,7 +24,7 @@ const Page = () => {
   useEffect(() => {
     registerGsap();
     if (prefersReducedMotion()) return;
-    const element = ref.current;
+    const element = ref.current; 
     if (!element) return;
 
     const ctx = gsap.context(() => {

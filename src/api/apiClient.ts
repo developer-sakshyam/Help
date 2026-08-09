@@ -15,11 +15,12 @@ export async function fetchApi<T>(
   try {
     const url = `${BASE_URL.replace(/\/$/, "")}/${endpoint.replace(/^\//, "")}`;
     const res = await fetch(url, {
+      ...options,
+      credentials: options?.credentials ?? "include",
       headers: {
         "Content-Type": "application/json",
         ...options?.headers,
       },
-      ...options,
     });
 
     if (!res.ok) {

@@ -6,6 +6,8 @@ import { SiteFooter } from "@/components/site/site-footer";
 import { opportunities, type OpportunityCategory } from "@/data/exploreData";
 import { gsap, prefersReducedMotion } from "@/lib/gsap";
 
+import { DonateModal, VolunteerModal } from "@/components/common/ActionModals";
+
 export const Route = createFileRoute("/explore")({
   head: () => ({
     meta: [
@@ -34,6 +36,16 @@ function ExplorePage() {
   const [selectedCategory, setSelectedCategory] = useState<string>("all");
   const [searchQuery, setSearchQuery] = useState("");
   const [urgentOnly, setUrgentOnly] = useState(false);
+  const [donateItem, setDonateItem] = useState<{
+    title: string;
+    org: string;
+    category: string;
+  } | null>(null);
+  const [volunteerItem, setVolunteerItem] = useState<{
+    title: string;
+    org: string;
+    location: string;
+  } | null>(null);
   const headerRef = useRef<HTMLDivElement | null>(null);
   const filterRef = useRef<HTMLDivElement | null>(null);
   const gridRef = useRef<HTMLDivElement | null>(null);
@@ -223,29 +235,31 @@ function ExplorePage() {
                   <span>{item.organization}</span>
                 </div>
 
-                <Link
-                  to="/get-started"
-                  onClick={(e) => {
-                    // animate card then navigate
-                    if (prefersReducedMotion()) return;
-                    e.preventDefault();
-                    const el = document.querySelector(`[data-id="${item.id}"]`);
-                    if (el)
-                      gsap.to(el, {
-                        scale: 0.98,
-                        opacity: 0.95,
-                        duration: 0.12,
-                        onComplete: () => {
-                          navigate({ to: "/get-started" });
-                        },
+                <button
+                  type="button"
+                  onClick={() => {
+                    if (
+                      item.category === "volunteers" ||
+                      item.actionLabel.toLowerCase().includes("volunteer")
+                    ) {
+                      setVolunteerItem({
+                        title: item.title,
+                        org: item.organization,
+                        location: `${item.location.city}, ${item.location.district}`,
                       });
-                    else navigate({ to: "/get-started" });
+                    } else {
+                      setDonateItem({
+                        title: item.title,
+                        org: item.organization,
+                        category: item.category.toUpperCase(),
+                      });
+                    }
                   }}
                   className="w-full inline-flex items-center justify-center gap-2 px-4 py-2 text-sm font-medium rounded-lg bg-primary text-primary-foreground hover:bg-primary/90 transition-colors"
                 >
                   {item.actionLabel}
                   <ArrowRight className="size-4" />
-                </Link>
+                </button>
               </div>
             </div>
           ))}
@@ -274,6 +288,22 @@ function ExplorePage() {
           </div>
         )}
       </main>
+
+      <DonateModal
+        isOpen={!!donateItem}
+        onClose={() => setDonateItem(null)}
+        initialTitle={donateItem?.title}
+        initialOrg={donateItem?.org}
+        initialCategory={donateItem?.category}
+      />
+
+      <VolunteerModal
+        isOpen={!!volunteerItem}
+        onClose={() => setVolunteerItem(null)}
+        initialTitle={volunteerItem?.title}
+        initialOrg={volunteerItem?.org}
+        initialLocation={volunteerItem?.location}
+      />
 
       <SiteFooter />
     </div>

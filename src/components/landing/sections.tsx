@@ -20,6 +20,14 @@ import AccordionGallery from "@/components/AccordionGallery";
 import { AnimatedButton } from "@/components/AnimatedButton";
 import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/hero-nepal.jpg";
+import bloodImage from "@/assets/blood.jpeg";
+import foodImage from "@/assets/food.jpg";
+import clothImage from "@/assets/cloth.jpg";
+import volunteeImage from "@/assets/volunteer.jpg";
+
+
+
+
 
 function SectionHeader({
   eyebrow,
@@ -139,28 +147,28 @@ export function CategoriesSection() {
               indexLabel: "01",
               description:
                 "Connect donors with people who urgently need blood.",
-              src: heroImage,
+              src: bloodImage,
               alt: "Blood donation",
             },
             {
               title: "Food",
               indexLabel: "02",
               description: "Put surplus food where it can make a difference.",
-              src: heroImage,
+              src: foodImage,
               alt: "Food distribution",
             },
             {
               title: "Clothing",
               indexLabel: "03",
               description: "Give useful clothing a second life.",
-              src: heroImage,
+              src: clothImage,
               alt: "Clothing donation",
             },
             {
               title: "Volunteers",
               indexLabel: "04",
               description: "Find people ready to give their time and skills.",
-              src: heroImage,
+              src: volunteeImage,
               alt: "Community volunteers",
             },
           ]}

@@ -4,24 +4,12 @@ import { useNavigate, createFileRoute } from "@tanstack/react-router";
 import { registerGsap, gsap, prefersReducedMotion } from "@/lib/gsap";
 
 const ROLES = [
-  { id: "donor", label: "Donor", desc: "Donate resources and support." },
-  {
-    id: "volunteer",
-    label: "Volunteer",
-    desc: "Help through time and skills.",
-  },
-  {
-    id: "donor_receiver",
-    label: "Donor + Receiver",
-    desc: "Both give and ask for help.",
-  },
-  { id: "receiver", label: "Receiver", desc: "Request assistance." },
-  { id: "ngo", label: "NGO", desc: "Distribute resources and run projects." },
-  {
-    id: "organization",
-    label: "Organization",
-    desc: "Create campaigns and recruit volunteers.",
-  },
+  { id: "Donor & Volunteer", label: "Donor & Volunteer", desc: "Both donate resources and give time." },
+  { id: "Donor", label: "Donor", desc: "Donate blood, food, clothing, and funds." },
+  { id: "Volunteer", label: "Volunteer", desc: "Help through hands-on skills and time." },
+  { id: "Receiver", label: "Receiver", desc: "Request community assistance and aid." },
+  { id: "Organizer", label: "Organizer", desc: "Manage relief camps and local drives." },
+  { id: "NGO / Organization", label: "NGO / Organization", desc: "Distribute resources and run major projects." },
 ];
 
 const Page = () => {

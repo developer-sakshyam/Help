@@ -42,11 +42,14 @@ const Page = () => {
     const stored = getStoredUser();
     if (!stored) ensureDefaultDemoUser();
     const user = getStoredUser();
-    if (
-      (user && user.email === email && user.password === password) ||
-      (email === "admin@gmail.com" && password === "admin")
-    ) {
-      setSession(true, email);
+    const trimmedEmail = email.trim().toLowerCase();
+
+    const isValidAdmin = trimmedEmail === "admin@gmail.com" && password === "admin";
+    const isValidUser = trimmedEmail === "user@gmail.com" && password === "user";
+    const isValidStored = user && user.email?.toLowerCase() === trimmedEmail && user.password === password;
+
+    if (isValidAdmin || isValidUser || isValidStored) {
+      setSession(true, trimmedEmail);
       setError("");
       if (!prefersReducedMotion() && ref.current) {
         gsap.fromTo(
@@ -61,9 +64,9 @@ const Page = () => {
             { scale: 0.96, duration: 0.08, yoyo: true, repeat: 1 },
           );
       }
-      setTimeout(() => navigate({ to: "/explore" }), 420);
+      setTimeout(() => navigate({ to: "/dashboard" }), 420);
     } else {
-      setError("Invalid email or password.");
+      setError("Invalid email or password. Try admin@gmail.com / admin or user@gmail.com / user.");
       if (!prefersReducedMotion() && ref.current) {
         gsap.fromTo(
           ref.current,
@@ -82,13 +85,43 @@ const Page = () => {
           Sign in to continue helping your community.
         </p>
 
+        {/* QUICK DEMO PRESETS FOR JUDGES */}
+        <div className="mb-6 p-3 bg-muted/40 border rounded-md space-y-2 text-xs">
+          <div className="font-mono font-semibold text-foreground uppercase tracking-wider">
+            DEMO PRESET ACCOUNTS:
+          </div>
+          <div className="flex flex-wrap gap-2">
+            <button
+              type="button"
+              onClick={() => {
+                setEmail("admin@gmail.com");
+                setPassword("admin");
+              }}
+              className="px-2.5 py-1 bg-card border rounded hover:bg-accent transition-colors font-mono"
+            >
+              Admin (admin@gmail.com)
+            </button>
+            <button
+              type="button"
+              onClick={() => {
+                setEmail("user@gmail.com");
+                setPassword("user");
+              }}
+              className="px-2.5 py-1 bg-card border rounded hover:bg-accent transition-colors font-mono"
+            >
+              Aayush (user@gmail.com)
+            </button>
+          </div>
+        </div>
+
         <form onSubmit={handleSubmit} className="space-y-4">
           <div>
             <label className="block text-sm mb-1">Email</label>
             <input
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              className="w-full border rounded px-3 py-2"
+              placeholder="admin@gmail.com or user@gmail.com"
+              className="w-full border rounded px-3 py-2 bg-background"
               onFocus={(ev) => {
                 if (!prefersReducedMotion())
                   gsap.to(ev.currentTarget, { y: -3, duration: 0.12 });
@@ -105,7 +138,8 @@ const Page = () => {
               type="password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
-              className="w-full border rounded px-3 py-2"
+              placeholder="••••••••"
+              className="w-full border rounded px-3 py-2 bg-background"
               onFocus={(ev) => {
                 if (!prefersReducedMotion())
                   gsap.to(ev.currentTarget, { y: -3, duration: 0.12 });
@@ -116,7 +150,7 @@ const Page = () => {
               }}
             />
           </div>
-          {error && <div className="text-destructive">{error}</div>}
+          {error && <div className="text-destructive text-sm">{error}</div>}
           <div className="flex items-center justify-between">
             <button
               ref={submitRef}

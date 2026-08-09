@@ -59,10 +59,10 @@ const Page = () => {
           <div className="mt-4">
             <button
               type="button"
-              onClick={() => navigate({ to: "/explore" })}
+              onClick={() => navigate({ to: "/dashboard" })}
               className="px-5 py-2 rounded bg-brand text-white"
             >
-              Explore Help.com
+              Go to Dashboard
             </button>
           </div>
         </div>

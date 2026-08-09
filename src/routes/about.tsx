@@ -12,6 +12,7 @@ import { SiteFooter } from "@/components/site/site-footer";
 import { SiteNav } from "@/components/site/site-nav";
 import { gsap, prefersReducedMotion, registerGsap } from "@/lib/gsap";
 import heroImage from "@/assets/hero-nepal.jpg";
+import secondImage from "@/assets/second.jpg"
 import "./about.css";
 
 const processSteps = [
@@ -485,7 +486,7 @@ function CategoryGrid() {
       <div className="about-category-preview">
         <div className="about-category-preview-image">
           <img
-            src={heroImage}
+            src={secondImage}
             alt={active.label}
             loading="lazy"
             width={1200}

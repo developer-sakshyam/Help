@@ -1,7 +1,7 @@
 import React, { useLayoutEffect, useRef, useState, useEffect } from "react";
 import { Link } from "@tanstack/react-router";
 import { registerGsap, gsap, prefersReducedMotion } from "@/lib/gsap";
-import defaultHeroImage from "../../assets/hero-nepal.jpg";
+import downloadImage from "../../assets/download.jpg";
 
 interface AuthLayoutProps {
   image?: string;
@@ -16,7 +16,7 @@ export default function AuthLayout({
 }: AuthLayoutProps) {
   const leftRef = useRef<HTMLDivElement>(null);
   const rightRef = useRef<HTMLDivElement>(null);
-  const resolvedImage = image || defaultHeroImage;
+  const resolvedImage = image || downloadImage;
 
   useEffect(() => {
     registerGsap();

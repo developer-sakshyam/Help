@@ -13,12 +13,95 @@ export interface VolunteerFilters {
   verifiedOnly?: boolean | undefined;
 }
 
+interface BackendVolunteer {
+  _id: string;
+  title: string;
+  description: string;
+  shortDescription: string;
+  type: string;
+  requiredSkills: string[];
+  preferredSkills: string[];
+  volunteerCount: number;
+  filledCount?: number;
+  schedule: Array<{ day: string; startTime: string; endTime: string }>;
+  applicationDeadline?: string;
+  location: {
+    province: string;
+    district: string;
+    municipality?: string;
+    address?: string;
+  };
+  status: string;
+  isFeatured?: boolean;
+  gallery?: string[];
+}
+
+interface PaginatedResponse<T> {
+  data: {
+    data: T[];
+    pagination: {
+      page: number;
+      limit: number;
+      total: number;
+      totalPages: number;
+      hasNext: boolean;
+      hasPrev: boolean;
+    };
+  };
+  success: boolean;
+}
+
+interface SingleVolunteerResponse {
+  data: {
+    opportunity: BackendVolunteer;
+  };
+  success: boolean;
+}
+
+function mapVolunteer(volunteer: BackendVolunteer): Volunteer {
+  const skills = [
+    ...(volunteer.requiredSkills || []),
+    ...(volunteer.preferredSkills || []),
+  ].filter(Boolean);
+
+  const address =
+    volunteer.location.municipality || volunteer.location.district || "";
+
+  const availability = volunteer.applicationDeadline
+    ? `Open until ${new Date(volunteer.applicationDeadline).toLocaleDateString()}`
+    : "Open";
+
+  return {
+    id: volunteer._id,
+    name: volunteer.title,
+    profileImage: volunteer.gallery?.[0] || undefined,
+    location: address,
+    district: volunteer.location.district,
+    province: volunteer.location.province,
+    skills,
+    interests: [
+      volunteer.type,
+      ...(volunteer.preferredSkills?.slice(0, 2) || []),
+    ].filter(Boolean),
+    experience: volunteer.shortDescription || "Volunteer opportunity",
+    availability,
+    verified: volunteer.status === "open" || volunteer.isFeatured === true,
+    rating: 4.8,
+    volunteerHours: volunteer.volunteerCount || 0,
+    bio: volunteer.description,
+  };
+}
+
 export async function getVolunteers(
   filters?: VolunteerFilters,
 ): Promise<Volunteer[]> {
-  const remoteData = await fetchApi<Volunteer[]>("/api/volunteers");
+  const remoteData = await fetchApi<PaginatedResponse<BackendVolunteer>>(
+    "/api/volunteers?page=1&limit=100",
+  );
   const dataset =
-    remoteData && Array.isArray(remoteData) ? remoteData : volunteersDemoData;
+    remoteData && Array.isArray(remoteData.data?.data)
+      ? remoteData.data.data.map(mapVolunteer)
+      : volunteersDemoData;
 
   if (!filters) return dataset;
 
@@ -74,8 +157,11 @@ export async function getVolunteers(
 }
 
 export async function getVolunteerById(id: string): Promise<Volunteer | null> {
-  const remoteData = await fetchApi<Volunteer>(`/api/volunteers/${id}`);
-  if (remoteData) return remoteData;
+  const remoteData = await fetchApi<SingleVolunteerResponse>(
+    `/api/volunteers/${id}`,
+  );
+  if (remoteData?.data?.opportunity)
+    return mapVolunteer(remoteData.data.opportunity);
 
   const found = volunteersDemoData.find((v) => v.id === id);
   return found || null;

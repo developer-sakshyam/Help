@@ -9,10 +9,91 @@ export interface NGOFilters {
   verifiedOnly?: boolean | undefined;
 }
 
+interface BackendNGO {
+  _id: string;
+  name: string;
+  slug: string;
+  description: string;
+  mission: string;
+  registrationDate: string;
+  logo?: string;
+  website?: string;
+  email: string;
+  phone: string;
+  location: {
+    province: string;
+    district: string;
+    municipality?: string;
+    address?: string;
+  };
+  contactPerson: {
+    name: string;
+    position: string;
+    email: string;
+    phone: string;
+  };
+  focusAreas: string[];
+  isVerified: boolean;
+  totalCampaigns: number;
+  totalVolunteers: number;
+}
+
+interface PaginatedResponse<T> {
+  data: {
+    data: T[];
+    pagination: {
+      page: number;
+      limit: number;
+      total: number;
+      totalPages: number;
+      hasNext: boolean;
+      hasPrev: boolean;
+    };
+  };
+  success: boolean;
+}
+
+interface SingleNGOResponse {
+  data: {
+    ngo: BackendNGO;
+  };
+  success: boolean;
+}
+
+function mapNGO(ngo: BackendNGO): NGO {
+  const address = ngo.location.address || ngo.location.municipality || "";
+
+  return {
+    id: ngo._id,
+    name: ngo.name,
+    logo: ngo.logo || "",
+    location: address ? `${address}, ${ngo.location.district}` : ngo.location.district,
+    district: ngo.location.district,
+    province: ngo.location.province,
+    causes: ngo.focusAreas,
+    description: ngo.description,
+    verified: ngo.isVerified,
+    founded: new Date(ngo.registrationDate).getFullYear(),
+    volunteersCount: ngo.totalVolunteers,
+    projectsCount: ngo.totalCampaigns,
+    contact: {
+      phone: ngo.contactPerson.phone,
+      email: ngo.contactPerson.email,
+      address: address || `${ngo.location.municipality || ""}, ${ngo.location.district}`,
+    },
+    website: ngo.website || "",
+    activeProjects: ngo.focusAreas.slice(0, 4),
+  };
+}
+
 export async function getNGOs(filters?: NGOFilters): Promise<NGO[]> {
-  const remoteData = await fetchApi<NGO[]>("/api/ngos");
+  const remoteData = await fetchApi<PaginatedResponse<BackendNGO>>(
+    "/api/ngos?page=1&limit=100",
+  );
   const dataset =
-    remoteData && Array.isArray(remoteData) ? remoteData : ngosDemoData;
+    remoteData && Array.isArray(remoteData.data?.data)
+      ? remoteData.data.data.map(mapNGO)
+      : ngosDemoData;
 
   if (!filters) return dataset;
 
@@ -52,8 +133,8 @@ export async function getNGOs(filters?: NGOFilters): Promise<NGO[]> {
 }
 
 export async function getNGOById(id: string): Promise<NGO | null> {
-  const remoteData = await fetchApi<NGO>(`/api/ngos/${id}`);
-  if (remoteData) return remoteData;
+  const remoteData = await fetchApi<SingleNGOResponse>(`/api/ngos/${id}`);
+  if (remoteData?.data?.ngo) return mapNGO(remoteData.data.ngo);
 
   const found = ngosDemoData.find((n) => n.id === id);
   return found || null;

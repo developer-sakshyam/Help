@@ -7,9 +7,11 @@
  */
 
 export const NAV_LINKS = [
+  { label: "Dashboard", to: "/dashboard" },
+  { label: "Leaderboard", to: "/leaderboard" },
   { label: "Explore", to: "/explore" },
   { label: "Campaigns", to: "/campaigns" },
-  { label: "Volunteer", to: "/volunteer" },
+  { label: "Volunteer", to: "/volunteers" },
   { label: "NGOs", to: "/ngos" },
   { label: "About", to: "/about" },
 ] as const;
