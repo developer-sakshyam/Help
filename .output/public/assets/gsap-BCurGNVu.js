@@ -1,0 +1,1 @@
+import{n as e,t}from"./index-DPkQtBY6.js";var n=!1;function r(){try{return typeof window>`u`||!!(window.matchMedia&&window.matchMedia(`(prefers-reduced-motion: reduce)`).matches)}catch{return!0}}function i(){n||typeof window>`u`||(e.registerPlugin(t),e.defaults({ease:`power3.out`,duration:.9}),n=!0)}export{i as n,r as t};
