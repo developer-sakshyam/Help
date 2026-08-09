@@ -352,6 +352,8 @@ ___
 ```bash
 git clone https://github.com/developer-sakshyam/Help.git
 cd Help
+npm install
+npm run dev
 ```
 
 **2. Backend Setup:**
