@@ -97,31 +97,6 @@
             color: #1f2937;
         }
 
-        .feature-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            margin: 30px 0;
-        }
-
-        .feature-item {
-            background-color: #f3f4f6;
-            padding: 20px;
-            border-radius: 6px;
-            border-left: 4px solid #2563eb;
-        }
-
-        .feature-item strong {
-            color: #2563eb;
-            display: block;
-            margin-bottom: 8px;
-        }
-
-        .feature-item p {
-            color: #555;
-            font-size: 0.95em;
-        }
-
         pre {
             background-color: #1f2937;
             color: #e5e7eb;
