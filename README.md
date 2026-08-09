@@ -1,768 +1,653 @@
-<img src="https://img.shields.io/badge/TYPESCRIPT-3178C6?style=for-the-badge&logo=typescript&logoColor=white" />
-<img src="https://img.shields.io/badge/NODE.JS-339933?style=for-the-badge&logo=node.js&logoColor=white" />
+<div align="center">
 
-<br><br>
+# ❤️ Help.com
+
+### Give what is needed. Help where it matters.
+
+A humanitarian platform connecting **donors, volunteers, NGOs, organizations, and people in need** through one centralized ecosystem.
+
+<br />
+
+<p>
+  <strong>Donate</strong> •
+  <strong>Volunteer</strong> •
+  <strong>Discover</strong> •
+  <strong>Connect</strong> •
+  <strong>Create Impact</strong>
+</p>
+
+<br />
 
 </div>
 
 ---
 
-<div align="center">
+<h2>🌍 About Help.com</h2>
 
-<h2>🌍 THE IDEA</h2>
-
-<h3>
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-</h3>
-
-</div>
-
-<p align="center">
-People are willing to help.
-<br>
-Organizations need help.
-<br>
-Resources are available.
-<br><br>
-
-<b>But the right people often never find each other.</b>
+<p>
+<strong>Help.com</strong> is a humanitarian digital platform designed to make
+helping people easier, faster, and more transparent.
 </p>
 
-<br>
+<p>
+Instead of having donation requests, volunteer opportunities, blood requirements,
+NGOs, and community campaigns scattered across different platforms,
+<strong>Help.com brings them together into one centralized ecosystem.</strong>
+</p>
+
+<p>Users can:</p>
+
+<ul>
+  <li>🩸 Find and respond to blood donation needs</li>
+  <li>🍚 Donate food and essential resources</li>
+  <li>👕 Donate clothing and useful items</li>
+  <li>📦 Respond to verified resource requests</li>
+  <li>🤝 Discover and participate in volunteer opportunities</li>
+  <li>🏢 Discover NGOs and organizations</li>
+  <li>📢 Discover community campaigns</li>
+  <li>📍 Find opportunities based on location</li>
+  <li>🏆 Track their community contribution and impact</li>
+</ul>
+
+<blockquote>
+<strong>The idea is simple:</strong><br />
+Make it easier for people to help — and easier for people to find that help.
+</blockquote>
+
+---
+
+<h2>✨ Core Features</h2>
 
 <table>
 <tr>
 
 <td width="33%" align="center">
 
-### 🩸
+<h3>🩸 Donations</h3>
 
-<b>Someone needs blood.</b>
-
-<br><br>
-
-But doesn't know where to find a potential donor.
+<p>
+Discover and respond to donation opportunities including
+blood, food, clothing, medical supplies, books, furniture,
+electronics and other essential resources.
+</p>
 
 </td>
 
 <td width="33%" align="center">
 
-### 🙋
+<h3>🤝 Volunteering</h3>
 
-<b>An organization needs volunteers.</b>
-
-<br><br>
-
-But struggles to reach people willing to help.
+<p>
+Find community service opportunities and participate in
+campaigns and humanitarian activities.
+</p>
 
 </td>
 
 <td width="33%" align="center">
 
-### 🍱
+<h3>🏢 NGOs</h3>
 
-<b>Someone has resources to donate.</b>
-
-<br><br>
-
-But doesn't know who actually needs them.
-
-</td>
-
-</tr>
-</table>
-
-<br>
-
-<div align="center">
-
-<h2>💡 HELP.COM CONNECTS THEM.</h2>
-
-</div>
-
----
-
-<div align="center">
-
-<h2>🚨 THE PROBLEM</h2>
-
-<h3>
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-</h3>
-
-</div>
-
-<p align="center">
-Humanitarian assistance is often fragmented across different organizations,
-social media posts, phone calls, and personal networks.
+<p>
+Discover organizations working on humanitarian,
+social and community-focused initiatives.
 </p>
 
-<table>
-<tr>
-
-<td align="center">
-
-### 🩸
-<b>Blood shortages</b>
-
-<br>
-
-Finding the right donor during an emergency can be difficult.
-
-</td>
-
-<td align="center">
-
-### 🙋
-<b>Volunteer shortages</b>
-
-<br>
-
-Organizations struggle to recruit volunteers for events.
-
-</td>
-
-<td align="center">
-
-### ♻️
-<b>Resource waste</b>
-
-<br>
-
-Useful food, clothes and resources can go unused.
-
 </td>
 
 </tr>
 
 <tr>
 
-<td align="center">
-
-### 🏢
-<b>NGO visibility</b>
-
-<br>
-
-People often don't know which organizations need support.
-
-</td>
-
-<td align="center">
-
-### 📢
-<b>Campaign discovery</b>
-
-<br>
-
-Community initiatives can struggle to reach volunteers.
-
-</td>
-
-<td align="center">
-
-### 🧩
-<b>Fragmentation</b>
-
-<br>
-
-People have to search multiple places to find ways to help.
-
-</td>
-
-</tr>
-</table>
-
----
-
-<div align="center">
-
-<h2>❤️ OUR SOLUTION</h2>
-
-<h3>
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-</h3>
-
-</div>
-
-<p align="center">
-<b>Help.com brings multiple forms of community assistance into one ecosystem.</b>
-</p>
-
-<br>
-
-<table>
-<tr>
-
-<td align="center" width="25%">
-
-<h2>🩸</h2>
-
-<b>BLOOD</b>
-
-<br>
-
-Find blood donation opportunities and potential donors.
-
-</td>
-
-<td align="center" width="25%">
-
-<h2>🍱</h2>
-
-<b>DONATIONS</b>
-
-<br>
-
-Donate food, clothing, books and other useful resources.
-
-</td>
-
-<td align="center" width="25%">
-
-<h2>🙋</h2>
-
-<b>VOLUNTEERS</b>
-
-<br>
-
-Discover and apply for volunteer opportunities.
-
-</td>
-
-<td align="center" width="25%">
-
-<h2>🏢</h2>
-
-<b>NGOs</b>
-
-<br>
-
-Discover organizations and their community initiatives.
-
-</td>
-
-</tr>
-</table>
-
-<br>
-
-<div align="center">
-
-### One platform.
-
-### Multiple ways to help.
-
-### One community.
-
-</div>
-
----
-
-<div align="center">
-
-<h2>✨ CORE FEATURES</h2>
-
-<h3>
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-</h3>
-
-</div>
-
-<br>
-
-<table>
-
-<tr>
-
-<td width="50%">
-
-<h3>🔎 Explore</h3>
-
-Discover opportunities across the platform.
-
-<ul>
-<li>Search</li>
-<li>Filtering</li>
-<li>Categories</li>
-<li>Location discovery</li>
-<li>Interactive map</li>
-<li>Opportunity cards</li>
-</ul>
-
-</td>
-
-<td width="50%">
-
-<h3>🩸 Blood Donation</h3>
-
-Connect potential donors with people who need blood.
-
-<ul>
-<li>Blood-related opportunities</li>
-<li>Location-based discovery</li>
-<li>Donor information</li>
-<li>Emergency-oriented use case</li>
-</ul>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-<h3>🍱 Resource Donations</h3>
-
-Users can contribute resources such as:
-
-<ul>
-<li>Food</li>
-<li>Clothing</li>
-<li>Medical supplies</li>
-<li>Books</li>
-<li>Furniture</li>
-<li>Electronics</li>
-</ul>
-
-</td>
-
-<td>
-
-<h3>🙋 Volunteer Recruitment</h3>
-
-Organizations can find people willing to contribute their time.
-
-<ul>
-<li>Campaign discovery</li>
-<li>Volunteer opportunities</li>
-<li>Application flow</li>
-<li>Activity tracking</li>
-</ul>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-<h3>🏢 NGO Discovery</h3>
-
-Find organizations working on community causes.
-
-<ul>
-<li>NGO profiles</li>
-<li>Organization information</li>
-<li>Community initiatives</li>
-<li>Support opportunities</li>
-</ul>
-
-</td>
-
-<td>
+<td width="33%" align="center">
 
 <h3>📢 Campaigns</h3>
 
-Organizations can create community initiatives.
+<p>
+Organizations can create campaigns and connect
+volunteers with meaningful community projects.
+</p>
+
+</td>
+
+<td width="33%" align="center">
+
+<h3>🔎 Explore</h3>
+
+<p>
+Search, filter and discover assistance opportunities
+using categories and location-based discovery.
+</p>
+
+</td>
+
+<td width="33%" align="center">
+
+<h3>🏆 Community Impact</h3>
+
+<p>
+Users can track their contributions and compete on
+a community leaderboard.
+</p>
+
+</td>
+
+</tr>
+</table>
+
+---
+
+<h2>🔎 Explore</h2>
+
+<p>
+The <strong>Explore</strong> system acts as the central discovery area of
+Help.com.
+</p>
+
+<p>Users can discover opportunities across multiple categories:</p>
+
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Purpose</th>
+</tr>
+</thead>
+
+<tbody>
+
+<tr>
+<td>🩸 Blood</td>
+<td>Emergency and scheduled blood donation needs</td>
+</tr>
+
+<tr>
+<td>🍚 Food</td>
+<td>Food donations and community requirements</td>
+</tr>
+
+<tr>
+<td>👕 Clothing</td>
+<td>Clothing and essential-item donations</td>
+</tr>
+
+<tr>
+<td>💊 Medical</td>
+<td>Medical supplies and assistance</td>
+</tr>
+
+<tr>
+<td>📚 Books</td>
+<td>Educational and library resources</td>
+</tr>
+
+<tr>
+<td>🪑 Furniture</td>
+<td>Household and institutional resources</td>
+</tr>
+
+<tr>
+<td>💻 Electronics</td>
+<td>Devices and technology resources</td>
+</tr>
+
+<tr>
+<td>🏠 Shelter</td>
+<td>Temporary housing and rebuilding projects</td>
+</tr>
+
+<tr>
+<td>🤝 Volunteer</td>
+<td>Community service opportunities</td>
+</tr>
+
+</tbody>
+</table>
+
+<h3>Explore includes</h3>
 
 <ul>
-<li>Campaign discovery</li>
-<li>Volunteer recruitment</li>
-<li>Event information</li>
-<li>Community participation</li>
+  <li>🔍 Search</li>
+  <li>🏷️ Category filters</li>
+  <li>📍 Location filters</li>
+  <li>🗺️ Interactive map</li>
+  <li>📋 Opportunity cards</li>
+  <li>⚡ Urgency indicators</li>
+  <li>📌 Saved opportunities</li>
+</ul>
+
+---
+
+<h2>👤 User Roles</h2>
+
+<p>
+Help.com is designed around different ways people can participate
+in the humanitarian ecosystem.
+</p>
+
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Purpose</th>
+</tr>
+</thead>
+
+<tbody>
+
+<tr>
+<td>🧑 Donor</td>
+<td>Donate resources and respond to verified needs</td>
+</tr>
+
+<tr>
+<td>🤝 Volunteer</td>
+<td>Participate in community service and campaigns</td>
+</tr>
+
+<tr>
+<td>🔄 Donor & Receiver</td>
+<td>Both provide and request assistance</td>
+</tr>
+
+<tr>
+<td>🏢 NGO</td>
+<td>Receive resources and organize humanitarian activities</td>
+</tr>
+
+<tr>
+<td>🏛️ Organization</td>
+<td>Create campaigns and volunteer opportunities</td>
+</tr>
+
+<tr>
+<td>👑 Administrator</td>
+<td>Manage, moderate and oversee the platform</td>
+</tr>
+
+</tbody>
+</table>
+
+---
+
+<h2>📊 Dashboard</h2>
+
+<p>
+Every user can access a personalized dashboard that provides a central
+view of their activity and contribution.
+</p>
+
+<h3>Dashboard includes</h3>
+
+<table>
+<tr>
+
+<td width="50%">
+
+<ul>
+  <li>👤 Profile summary</li>
+  <li>❤️ Donation activity</li>
+  <li>🤝 Volunteer activity</li>
+  <li>📈 Community Impact Score</li>
+</ul>
+
+</td>
+
+<td width="50%">
+
+<ul>
+  <li>🔔 Notifications</li>
+  <li>📅 Upcoming campaigns and events</li>
+  <li>📌 Saved opportunities</li>
+  <li>🎯 Recommended opportunities</li>
 </ul>
 
 </td>
 
 </tr>
-
 </table>
 
 ---
 
-<div align="center">
+<h2>🏆 Community Impact Score</h2>
 
-<h2>🗺️ EXPLORE</h2>
-
-<h3>
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-</h3>
-
-</div>
-
-<p align="center">
-The Explore page is the heart of Help.com's discovery experience.
+<p>
+Help.com introduces a <strong>Community Impact Score (CIS)</strong>
+to recognize users who actively contribute to their communities.
 </p>
 
-<br>
+<p>Users can increase their impact through activities such as:</p>
 
-<div align="center">
+<table>
+<tr>
 
-<kbd>🔎 SEARCH</kbd>
-&nbsp;&nbsp;
-<kbd>⚙️ FILTER</kbd>
-&nbsp;&nbsp;
-<kbd>📍 LOCATION</kbd>
-&nbsp;&nbsp;
-<kbd>🗺️ MAP</kbd>
-&nbsp;&nbsp;
-<kbd>❤️ OPPORTUNITIES</kbd>
+<td align="center" width="25%">
+<h3>🩸</h3>
+<strong>Blood Donations</strong>
+</td>
 
-</div>
+<td align="center" width="25%">
+<h3>📦</h3>
+<strong>Resource Donations</strong>
+</td>
 
-<br>
+<td align="center" width="25%">
+<h3>🤝</h3>
+<strong>Volunteering</strong>
+</td>
 
-<p align="center">
+<td align="center" width="25%">
+<h3>📢</h3>
+<strong>Campaign Participation</strong>
+</td>
 
-Users can search and filter opportunities based on what they want to contribute.
+</tr>
+</table>
 
+<p>
+The more meaningful contributions a user makes, the higher their
+<strong>Community Impact Score</strong> becomes.
 </p>
 
-<br>
+---
+
+<h2>🥇 Community Leaderboard</h2>
+
+<p>
+The leaderboard recognizes users who contribute the most to the
+Help.com community.
+</p>
+
+<p>
+Users with higher contribution activity appear higher on the leaderboard,
+creating a visible system of community recognition.
+</p>
+
+<table>
+<thead>
+<tr>
+<th>Rank</th>
+<th>Contributor</th>
+<th>Contributions</th>
+<th>Impact Score</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>🥇 #1</td>
+<td>Demo Contributor</td>
+<td>Multiple contributions</td>
+<td>980</td>
+</tr>
+
+<tr>
+<td>🥈 #2</td>
+<td>Community Helper</td>
+<td>Multiple contributions</td>
+<td>845</td>
+</tr>
+
+<tr>
+<td>🥉 #3</td>
+<td>Helping Hands</td>
+<td>Multiple contributions</td>
+<td>790</td>
+</tr>
+</tbody>
+</table>
+
+---
+
+<h2>🩸 Blood Donation</h2>
+
+<p>
+The blood donation module is designed to connect people who can donate
+blood with people who urgently need it.
+</p>
+
+<p>
+Users can discover blood-related opportunities using information such as:
+</p>
+
+<ul>
+  <li>🩸 Blood group</li>
+  <li>🚨 Emergency level</li>
+  <li>🏥 Hospital</li>
+  <li>📍 Location</li>
+  <li>📅 Required date</li>
+</ul>
+
+<p>
+This allows urgent blood requirements to be discovered more quickly
+instead of relying entirely on scattered social media posts.
+</p>
+
+---
+
+<h2>🤝 Volunteer System</h2>
+
+<p>
+Help.com also provides a dedicated volunteer discovery system.
+</p>
+
+<p>
+Users can browse community opportunities and find activities matching
+their interests, location and availability.
+</p>
+
+<p>Volunteer opportunities can include:</p>
+
+<ul>
+  <li>🌱 Environmental activities</li>
+  <li>📚 Educational programs</li>
+  <li>🏥 Health-related campaigns</li>
+  <li>🍚 Food distribution</li>
+  <li>🏘️ Community rebuilding</li>
+  <li>📢 Social awareness campaigns</li>
+</ul>
+
+---
+
+<h2>🏢 NGO & Organization Support</h2>
+
+<p>
+NGOs and organizations can use Help.com to connect with donors,
+volunteers and communities.
+</p>
+
+<p>Organizations can:</p>
+
+<ul>
+  <li>📢 Launch campaigns</li>
+  <li>🤝 Recruit volunteers</li>
+  <li>📦 Receive donations</li>
+  <li>📋 Publish assistance requests</li>
+  <li>🌍 Organize community projects</li>
+</ul>
+
+---
+
+<h2>🛡️ Trust & Transparency</h2>
+
+<p>
+A humanitarian platform needs trust. Help.com is designed with
+transparency and moderation in mind.
+</p>
+
+<ul>
+  <li>✅ User verification</li>
+  <li>✅ NGO verification</li>
+  <li>✅ Verified requests</li>
+  <li>✅ Donation confirmation</li>
+  <li>⭐ Ratings</li>
+  <li>🚨 Reporting tools</li>
+  <li>🛡️ Administrative moderation</li>
+</ul>
+
+<p>
+These systems are intended to reduce fraudulent activity and improve
+confidence between people giving and receiving assistance.
+</p>
+
+---
+
+<h2>🎨 Design Philosophy</h2>
+
+<p>
+Help.com follows a clean, modern and purposeful visual direction.
+The interface focuses on usability and meaningful interaction rather
+than excessive visual decoration.
+</p>
+
+<h3>Design principles</h3>
+
+<ul>
+  <li>◼️ Minimal and structured layouts</li>
+  <li>🌓 Dark and light mode</li>
+  <li>🔤 Strong typography</li>
+  <li>✨ Smooth animations</li>
+  <li>🖱️ Interactive UI elements</li>
+  <li>📱 Responsive design</li>
+  <li>🎯 Clear information hierarchy</li>
+  <li>🌊 Smooth scrolling</li>
+</ul>
+
+<p>
+Motion and animation are used to improve the experience rather than
+overwhelm the content.
+</p>
+
+---
+
+<h2>🛠️ Tech Stack</h2>
+
+<table>
+<thead>
+<tr>
+<th>Layer</th>
+<th>Technology</th>
+</tr>
+</thead>
+
+<tbody>
+
+<tr>
+<td>⚛️ Frontend</td>
+<td>React + TypeScript</td>
+</tr>
+
+<tr>
+<td>🎨 Styling</td>
+<td>CSS</td>
+</tr>
+
+<tr>
+<td>✨ Animation</td>
+<td>GSAP + React Bits components</td>
+</tr>
+
+<tr>
+<td>🧭 Routing</td>
+<td>React Router</td>
+</tr>
+
+<tr>
+<td>🖥️ Backend</td>
+<td>Node.js + Express.js</td>
+</tr>
+
+<tr>
+<td>🍃 Database</td>
+<td>MongoDB</td>
+</tr>
+
+<tr>
+<td>🔌 Communication</td>
+<td>REST APIs</td>
+</tr>
+
+<tr>
+<td>🗺️ Maps</td>
+<td>Interactive map integration</td>
+</tr>
+
+</tbody>
+</table>
+
+---
+
+<h2>🏗️ Platform Structure</h2>
 
 ```text
-                         EXPLORE
-                            │
-             ┌──────────────┼──────────────┐
-             │              │              │
-             ▼              ▼              ▼
-          DONATE        VOLUNTEER        BLOOD
-             │              │              │
-             └──────────────┼──────────────┘
-                            │
-                            ▼
-                       LOCATION
-                            │
-                            ▼
-                         MAP 📍
-<div align="center"> <h2>📊 DASHBOARD</h2> <h3> ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ </h3> </div> <p align="center"> Every user gets one centralized dashboard to understand their activity and contribution. </p> <br> <table> <tr> <td align="center">
-❤️
+                              ┌─────────────────────┐
+                              │       HELP.COM      │
+                              └──────────┬──────────┘
+                                         │
+              ┌──────────────────────────┼──────────────────────────┐
+              │                          │                          │
+              ▼                          ▼                          ▼
+        ┌───────────┐             ┌────────────┐             ┌────────────┐
+        │ Donations │             │ Volunteers │             │ Campaigns  │
+        └─────┬─────┘             └──────┬─────┘             └──────┬─────┘
+              │                          │                          │
+              └──────────────────────────┼──────────────────────────┘
+                                         │
+                                         ▼
+                                ┌─────────────────┐
+                                │     EXPLORE     │
+                                │ Search + Filter │
+                                │   + Map + Data  │
+                                └────────┬────────┘
+                                         │
+                         ┌───────────────┼───────────────┐
+                         │               │               │
+                         ▼               ▼               ▼
+                    ┌─────────┐    ┌───────────┐   ┌────────────┐
+                    │  NGOs   │    │ Receivers │   │  Donors    │
+                    └────┬────┘    └─────┬─────┘   └─────┬──────┘
+                         │               │               │
+                         └───────────────┼───────────────┘
+                                         │
+                                         ▼
+                              ┌────────────────────┐
+                              │ COMMUNITY IMPACT   │
+                              │       SCORE        │
+                              └──────────┬─────────┘
+                                         │
+                                         ▼
+                              ┌────────────────────┐
+                              │    LEADERBOARD     │
+                              └────────────────────┘
+<h2>🔐 Demo Authentication</h2> <p> For the hackathon demonstration, Help.com uses demo authentication and demo user data where required. </p> <p> This allows judges to experience the platform's user flows without requiring a complete production authentication system. </p> <h3>Demo account</h3> <table> <thead> <tr> <th>Field</th> <th>Demo Value</th> </tr> </thead> <tbody> <tr> <td>📧 Email</td> <td><code>admin@gmail.com</code></td> </tr> <tr> <td>🔑 Password</td> <td><code>admin</code></td> </tr> </tbody> </table> <p> Additional demo data is used throughout the platform to demonstrate donation, volunteering, campaign, dashboard and leaderboard experiences. </p>
+<h2>📱 Responsive Experience</h2> <p> Help.com is designed to work across different screen sizes. </p> <table> <tr> <td align="center" width="33%"> <h3>🖥️ Desktop</h3>
 
-<b>DONATIONS</b>
+Full navigation, dashboards,
+maps and discovery layouts.
 
-<br><br>
+</td> <td align="center" width="33%"> <h3>💻 Tablet</h3>
 
-Track contribution activity.
+Adaptive layouts with
+responsive content sections.
 
-</td> <td align="center">
-🙋
+</td> <td align="center" width="33%"> <h3>📱 Mobile</h3>
 
-<b>VOLUNTEERING</b>
-
-<br><br>
-
-Track volunteer applications.
-
-</td> <td align="center">
-⭐
-
-<b>IMPACT</b>
-
-<br><br>
-
-Track Community Impact Score.
-
-</td> <td align="center">
-🏆
-
-<b>RANK</b>
-
-<br><br>
-
-See leaderboard position.
-
-</td> </tr> </table>
-<div align="center"> <h2>⭐ COMMUNITY IMPACT SCORE</h2> <h3> ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ </h3> </div> <p align="center">
-
-Help.com introduces the concept of a <b>Community Impact Score</b>.
-
-</p> <br> <div align="center">
-                    CONTRIBUTION
-                         │
-          ┌──────────────┼──────────────┐
-          │              │              │
-          ▼              ▼              ▼
-       ❤️ DONATE     🙋 VOLUNTEER    🤝 PARTICIPATE
-          │              │              │
-          └──────────────┼──────────────┘
-                         │
-                         ▼
-                  ⭐ IMPACT SCORE
-                         │
-                         ▼
-                   🏆 LEADERBOARD
-</div> <br> <p align="center"> Instead of measuring popularity through followers or likes, <br> Help.com focuses on <b>actual contribution.</b> </p>
-<div align="center"> <h2>🏆 LEADERBOARD</h2> <h3> ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ </h3> </div> <p align="center"> The more users contribute, the higher they can climb. </p> <br> <table align="center"> <tr> <th>Rank</th> <th>Contributor</th> <th>Impact Score</th> </tr> <tr> <td align="center">🥇 1</td> <td>Sita</td> <td align="center"><b>1,280</b></td> </tr> <tr> <td align="center">🥈 2</td> <td>Rohan</td> <td align="center"><b>1,120</b></td> </tr> <tr> <td align="center">🥉 3</td> <td>Aayush</td> <td align="center"><b>980</b></td> </tr> <tr> <td align="center">4</td> <td>Bikash</td> <td align="center"><b>860</b></td> </tr> <tr> <td align="center">5</td> <td>Anisha</td> <td align="center"><b>740</b></td> </tr> </table> <br> <p align="center">
-
-Future versions could introduce:
-
-<br><br>
-
-🏅 Achievement badges   •  
-📜 Digital certificates   •  
-🌟 Recognition   •  
-🎖️ Milestones
-
-</p>
-<div align="center"> <h2>👥 USER ROLES</h2> <h3> ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ </h3> </div> <table align="center"> <tr> <td align="center">
-💝
-
-<b>DONOR</b>
-
-<br>
-
-Contribute resources.
-
-</td> <td align="center">
-🙋
-
-<b>VOLUNTEER</b>
-
-<br>
-
-Contribute time & skills.
-
-</td> <td align="center">
-🤝
-
-<b>DONOR & VOLUNTEER</b>
-
-<br>
-
-Contribute both.
-
-</td> </tr> <tr> <td align="center">
-🆘
-
-<b>RECEIVER</b>
-
-<br>
-
-Request assistance.
-
-</td> <td align="center">
-📢
-
-<b>ORGANIZER</b>
-
-<br>
-
-Create campaigns.
-
-</td> <td align="center">
-🏢
-
-<b>NGO / ORGANIZATION</b>
-
-<br>
-
-Run community initiatives.
+Mobile navigation and
+stacked content layouts.
 
 </td> </tr> </table>
-<div align="center"> <h2>🔐 HACKATHON DEMO</h2> <h3> ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ </h3> </div> <p align="center"> The hackathon prototype uses demo authentication so judges can immediately explore the platform. </p> <br> <table align="center"> <tr> <td align="center" width="50%"> <h3>🛡️ ADMIN</h3>
-
-<kbd>admin@gmail.com</kbd>
-
-<br><br>
-
-<kbd>admin</kbd>
-
-<br><br>
-
-Administrator dashboard & platform management.
-
-</td> <td align="center" width="50%"> <h3>🤝 DEMO USER</h3>
-
-<kbd>user@gmail.com</kbd>
-
-<br><br>
-
-<kbd>user</kbd>
-
-<br><br>
-
-Donor + Volunteer experience.
-
-</td> </tr> </table> <br> <div align="center">
-
-<b>Demo data is intentionally used for the hackathon presentation.</b>
-
-<br>
-
-This allows judges to experience the complete product flow without requiring production authentication infrastructure.
-
-</div>
-<div align="center"> <h2>🎨 DESIGN & EXPERIENCE</h2> <h3> ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ </h3> </div> <table> <tr> <td align="center">
-
-🌗
-
-<br>
-
-<b>LIGHT / DARK MODE</b>
-
-</td> <td align="center">
-
-🎬
-
-<br>
-
-<b>GSAP ANIMATIONS</b>
-
-</td> <td align="center">
-
-📱
-
-<br>
-
-<b>RESPONSIVE UI</b>
-
-</td> <td align="center">
-
-🗺️
-
-<br>
-
-<b>INTERACTIVE MAP</b>
-
-</td> </tr> <tr> <td align="center">
-
-🖱️
-
-<br>
-
-<b>INTERACTIVE HOVERS</b>
-
-</td> <td align="center">
-
-📜
-
-<br>
-
-<b>SCROLL ANIMATIONS</b>
-
-</td> <td align="center">
-
-🔎
-
-<br>
-
-<b>SEARCH & FILTER</b>
-
-</td> <td align="center">
-
-🧭
-
-<br>
-
-<b>SINGLE NAVIGATION</b>
-
-</td> </tr> </table> <br> <p align="center"> The interface is intentionally designed to feel modern and interactive while keeping the humanitarian purpose clear. </p>
-<div align="center"> <h2>🧩 TECHNOLOGY STACK</h2> <h3> ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ </h3> <br> <img src="https://skillicons.dev/icons?i=react,typescript,vite,nodejs,express,mongodb,git,github" />
-
-<br><br>
-
-<table align="center"> <tr> <th>Technology</th> <th>Purpose</th> </tr> <tr> <td>⚛️ React</td> <td>Frontend application</td> </tr> <tr> <td>🔷 TypeScript</td> <td>Type-safe development</td> </tr> <tr> <td>⚡ Vite</td> <td>Frontend tooling & development</td> </tr> <tr> <td>🎬 GSAP</td> <td>Advanced UI animations</td> </tr> <tr> <td>🟢 Node.js</td> <td>Backend runtime</td> </tr> <tr> <td>🚂 Express.js</td> <td>REST API</td> </tr> <tr> <td>🍃 MongoDB</td> <td>Application data</td> </tr> </table> </div>
-<div align="center"> <h2>🏗️ ARCHITECTURE</h2> <h3> ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ </h3> </div>
-                         ┌───────────────────┐
-                         │      HELP.COM     │
-                         └─────────┬─────────┘
-                                   │
-                 ┌─────────────────┼─────────────────┐
-                 │                 │                 │
-                 ▼                 ▼                 ▼
-             ❤️ DONATE         🙋 VOLUNTEER      🩸 BLOOD
-                 │                 │                 │
-                 └─────────────────┼─────────────────┘
-                                   │
-                                   ▼
-                            🔎 EXPLORE
-                                   │
-              ┌────────────────────┼────────────────────┐
-              │                    │                    │
-              ▼                    ▼                    ▼
-           🏢 NGOs            📢 CAMPAIGNS          🆘 REQUESTS
-              │                    │                    │
-              └────────────────────┼────────────────────┘
-                                   │
-                                   ▼
-                            📊 DASHBOARD
-                                   │
-                                   ▼
-                         ⭐ IMPACT SCORE
-                                   │
-                                   ▼
-                           🏆 LEADERBOARD
-<div align="center"> <h2>🔌 BACKEND API</h2> <h3> ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ </h3> </div> <p align="center"> The frontend is progressively connected to the backend API. </p> <br> <table align="center"> <tr> <th>Endpoint</th> <th>Purpose</th> </tr> <tr> <td><code>/api/campaigns</code></td> <td>Campaign data</td> </tr> <tr> <td><code>/api/ngos</code></td> <td>NGO data</td> </tr> <tr> <td><code>/api/volunteers</code></td> <td>Volunteer data</td> </tr> </table> <br> <p align="center">
-
-The architecture allows additional modules to be connected progressively
-without rebuilding the frontend.
-
-</p>
-<div align="center"> <h2>🇳🇵 BUILT FOR NEPAL</h2> <h3> ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ </h3> </div> <p align="center">
-
-Help.com is designed around real community problems that can occur across Nepal.
-
-</p> <br> <table align="center"> <tr> <td align="center">🩸<br><b>Blood Emergency</b></td> <td align="center">🍱<br><b>Food Distribution</b></td> <td align="center">👕<br><b>Clothing Drives</b></td> <td align="center">🙋<br><b>Volunteer Recruitment</b></td> </tr> <tr> <td align="center">🌳<br><b>Community Projects</b></td> <td align="center">🏢<br><b>NGO Support</b></td> <td align="center">📚<br><b>Education Resources</b></td> <td align="center">🚑<br><b>Emergency Response</b></td> </tr> </table>
-<div align="center"> <h2>🛡️ TRUST & TRANSPARENCY</h2> <h3> ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ </h3> </div> <p align="center"> A real humanitarian platform cannot rely purely on good intentions. </p> <br> <table align="center"> <tr> <td align="center">✅<br>USER VERIFICATION</td> <td align="center">🏢<br>NGO VERIFICATION</td> <td align="center">📦<br>DONATION CONFIRMATION</td> </tr> <tr> <td align="center">🆘<br>REQUEST VERIFICATION</td> <td align="center">⭐<br>RATINGS</td> <td align="center">🚩<br>REPORTING</td> </tr> <tr> <td align="center">🛡️<br>ADMIN MODERATION</td> <td align="center">🔍<br>FRAUD DETECTION</td> <td align="center">📍<br>DONATION TRACKING</td> </tr> </table> <br> <div align="center">
-Future production versions can introduce stronger trust mechanisms.
-</div>
-<div align="center"> <h2>🚀 ROADMAP</h2> <h3> ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ </h3> </div> <details open> <summary><b>🏁 Hackathon Prototype</b></summary> <br>
- Landing page
- Explore experience
- Search & filtering
- Interactive map
- Donation system concept
- Blood donation concept
- Volunteer opportunities
- NGO discovery
- Campaigns
- User dashboard
- Community leaderboard
- Demo authentication
- Light / Dark mode
- GSAP animations
- Responsive design
-</details> <br> <details> <summary><b>🔮 Future Development</b></summary> <br>
- Production authentication
- Verified users
- Verified NGOs
- Real-time notifications
- Real donation/request matching
- Real volunteer applications
- Admin moderation
- Email / SMS notifications
- Advanced location matching
- AI-powered resource matching
- Emergency prioritization
- Fraud detection
- Nepal-wide humanitarian network
-</details>
-<div align="center"> <h2>🧠 WHY HELP.COM?</h2> <h3> ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ </h3> </div> <p align="center">
-
-There are countless platforms designed to help people
-<b>buy</b>, <b>sell</b>, <b>watch</b>, <b>share</b>, and <b>consume</b>.
-
-<br><br>
-
-Help.com focuses on something different.
-
-</p> <br> <div align="center">
-❤️ HELPING
-<br> <h3> The technology already exists. <br><br> The missing piece is often <b>connection.</b> </h3> <br> <table align="center"> <tr> <td align="center">🤝<br><b>THE RIGHT DONOR</b></td> <td align="center">🙋<br><b>THE RIGHT VOLUNTEER</b></td> <td align="center">🏢<br><b>THE RIGHT ORGANIZATION</b></td> </tr> <tr> <td align="center">📦<br><b>THE RIGHT RESOURCE</b></td> <td align="center">🆘<br><b>THE RIGHT PERSON</b></td> <td align="center">⏱️<br><b>AT THE RIGHT TIME</b></td> </tr> </table> </div>
-<div align="center"> <h2>🌟 OUR VISION</h2> <h3> ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ </h3> <br> <h2>
-
-Technology should not only connect people socially.
-
-<br><br>
-
-It should connect people<br>
-<b>when someone needs help.</b>
-
-</h2> <br> <img src="https://capsule-render.vercel.app/api?type=rect&color=2563EB&height=2&section=header" width="70%" />
-
-<br><br>
-
-<h1>🤝 CONNECT</h1> <h1>❤️ CONTRIBUTE</h1> <h1>🌍 CREATE IMPACT</h1> <br> <h1>HELP.COM</h1> <h3><i>Making helping people easier.</i></h3> <br> <img src="https://capsule-render.vercel.app/api?type=waving&color=0:2563EB,100:111827&height=120&section=footer" width="100%" /> </div> ```
+<h2>🚀 Project Goals</h2> <p> Help.com aims to solve a simple but important problem: <strong>people who want to help and people who need help often struggle to find each other.</strong> </p> <h3>The platform aims to:</h3> <ul> <li>🔗 Connect donors with genuine needs</li> <li>🩸 Make emergency blood discovery easier</li> <li>🤝 Increase volunteer participation</li> <li>♻️ Reduce waste by redirecting useful resources</li> <li>🏢 Support NGOs and organizations</li> <li>📍 Make local opportunities easier to discover</li> <li>🏆 Encourage positive community participation</li> <li>🛡️ Improve transparency in humanitarian activities</li> </ul>
+<h2>💡 The Problem</h2> <p> People donate, volunteer and help others every day. However, humanitarian opportunities are often fragmented across social media, messaging applications, organizations and word of mouth. </p> <p> At the same time, people who genuinely need assistance may not know where to find available resources. </p> <h2>💭 Our Solution</h2> <p> <strong>Help.com creates one place where these interactions can happen.</strong> </p> <p> Instead of asking: </p> <blockquote> "Where can I donate?" </blockquote> <p>or</p> <blockquote> "Where can I find help?" </blockquote> <p> users can simply explore the Help.com ecosystem. </p>
+<h2>🌱 Future Vision</h2> <p> Help.com is designed with the potential to grow beyond a hackathon prototype into a larger humanitarian ecosystem. </p> <p>Future possibilities include:</p> <ul> <li>🔐 Production-grade authentication</li> <li>💳 Secure donation payments</li> <li>📱 Dedicated mobile applications</li> <li>🤖 AI-powered opportunity matching</li> <li>🗺️ Advanced geographic matching</li> <li>🏥 Hospital integrations</li> <li>🏢 Expanded NGO management tools</li> <li>📊 Advanced impact analytics</li> <li>🔔 Real-time emergency notifications</li> <li>🌍 Expansion into additional communities and regions</li> </ul>
+<h2>⚡ Getting Started</h2> <h3>1. Clone the repository</h3> <pre> git clone YOUR_REPOSITORY_URL cd help.com </pre> <h3>2. Install dependencies</h3> <pre> npm install </pre> <h3>3. Start the development server</h3> <pre> npm run dev </pre> <p> The exact commands may vary depending on the frontend/backend project structure. </p>
+<h2>📂 Project Concept</h2> <table> <thead> <tr> <th>Module</th> <th>Description</th> </tr> </thead> <tbody> <tr> <td>🏠 Landing</td> <td>Introduction to the Help.com mission and platform</td> </tr> <tr> <td>🔎 Explore</td> <td>Search and discover humanitarian opportunities</td> </tr> <tr> <td>🤝 Volunteers</td> <td>Discover and participate in volunteer opportunities</td> </tr> <tr> <td>🏢 NGOs</td> <td>Discover humanitarian organizations</td> </tr> <tr> <td>📢 Campaigns</td> <td>Discover community campaigns</td> </tr> <tr> <td>👤 Dashboard</td> <td>Track personal activity and impact</td> </tr> <tr> <td>🏆 Leaderboard</td> <td>Recognize top community contributors</td> </tr> <tr> <td>ℹ️ About</td> <td>Explain the mission and purpose of Help.com</td> </tr> </tbody> </table>
+<h2>❤️ Why Help.com?</h2> <p> There are people willing to help. </p> <p> There are people who desperately need help. </p> <p> There are NGOs working every day to solve community problems. </p> <p> There are volunteers looking for meaningful ways to contribute. </p> <p> The problem is often not the willingness to help. </p> <h2>It's the connection.</h2> <p> <strong>Help.com is built to bridge that gap.</strong> </p>
+<br /> <div align="center">
+❤️ Give What Is Needed.
+Volunteer Where It Matters.
+Create Real Community Impact.
+<br />
+
+<strong>Help.com</strong>
+
+<p> Connecting people. Creating opportunities. Building stronger communities. </p> <br /> <hr /> <p> Made with ❤️ for a better community. </p> </div> ```
