@@ -350,8 +350,8 @@ ___
 
 **1. Clone Repository:**
 ```bash
-git clone https://github.com/help-com/help.com.git
-cd help.com
+git clone https://github.com/developer-sakshyam/Help.git
+cd Help
 ```
 
 **2. Backend Setup:**
@@ -366,7 +366,7 @@ npm start          # Production
 
 **3. Frontend Setup:**
 ```bash
-cd ../frontend
+cd ../land
 npm install
 cp .env.example .env.local
 # Edit .env.local with API endpoint
@@ -542,15 +542,9 @@ ___
 
 ___
 
-## <u>📄 License</u>
-
-This project is licensed under the **MIT License** - see LICENSE file for details.
-
-___
-
 <div align="center">
 
-### <u>Help.com — Connecting helpers with those in need, one platform at a time.</u>
+### <u>Help.com — Helping Should Be Simple.</u>
 
 **Donate. Volunteer. Connect. Create Impact.**
 
