@@ -7,10 +7,6 @@
 ![License](https://img.shields.io/badge/License-MIT-purple?style=for-the-badge)
 ![Status](https://img.shields.io/badge/Status-Hackathon%20Project-orange?style=for-the-badge)
 
-[![GitHub Stars](https://img.shields.io/github/stars/help-com/help.com?style=social)](https://github.com/developer-sakshyam/Help)
-[![GitHub Forks](https://img.shields.io/github/forks/help-com/help.com?style=social)](https://github.com/developer-sakshyam/Help)
-[![GitHub Issues](https://img.shields.io/github/issues/help-com/help.com)](https://github.com/developer-sakshyam/Help))
-
 </div>
 
 ### <u>Donate. Volunteer. Connect. Create Impact.</u>
